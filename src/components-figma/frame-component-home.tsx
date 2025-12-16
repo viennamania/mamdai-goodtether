@@ -93,7 +93,7 @@ const FrameComponentHome: NextPage = () => {
         >
           <div className="relative tracking-[0.2em] uppercase font-black text-5xl  xl:text-45xl ">
             {/*Let’s Doing Doit!*/}
-            테더를 사고싶으면? <span className="text-green-600">원클릭</span>!
+            테더를 사고싶으면? <span className="text-green-600">GoodTether</span>!
           </div>
         </motion.div>
 

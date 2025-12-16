@@ -50,7 +50,7 @@ export default function SearchTablePage() {
   const { data: session, status } = useSession();
   if (
     session?.user?.email &&
-    !session?.user?.email.includes ('@cryptoss.beauty')
+    !session?.user?.email.includes ('@cryptopay.beauty')
   ) {
     signOut(
       {

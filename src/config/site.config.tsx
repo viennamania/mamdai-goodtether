@@ -14,8 +14,8 @@ enum MODE {
 }
 
 export const siteConfig = {
-  title: '원클릭',
-  description: `원클릭`,
+  title: 'GoodTether',
+  description: `GoodTether`,
   logo: logoImg,
   icon: logoIconImg,
   
@@ -36,15 +36,15 @@ export const metaObject = (
   description: string = siteConfig.description
 ): Metadata => {
   return {
-    title: title ? `${title} - 원클릭` : siteConfig.title,
+    title: title ? `${title} - GoodTether` : siteConfig.title,
     description,
     openGraph: openGraph ?? {
-      title: title ? `${title} - 원클릭` : title,
+      title: title ? `${title} - GoodTether` : title,
       description,
-      url: 'https://cryptoss.beauty',
-      siteName: '원클릭', // https://developers.google.com/search/docs/appearance/site-names
+      url: 'https://cryptopay.beauty',
+      siteName: 'GoodTether', // https://developers.google.com/search/docs/appearance/site-names
       images: {
-        url: 'https://cryptoss.beauty/logo.webp',
+        url: 'https://cryptopay.beauty/logo.webp',
         width: 1200,
         height: 630,
       },

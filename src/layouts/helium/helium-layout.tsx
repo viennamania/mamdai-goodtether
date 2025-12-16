@@ -24,7 +24,7 @@ export default function HeliumLayout({
 
  
 
-  if (session && session?.user?.email?.includes('cryptoss.beauty') && !isRootPath) {
+  if (session && session?.user?.email?.includes('cryptopay.beauty') && !isRootPath) {
 
     return (
 
@@ -63,14 +63,14 @@ export default function HeliumLayout({
       
       {
       /*
-      session && (session?.user?.email === 'admin@cryptoss.beauty'
-      || session && session?.user?.email === 'doingdoit1@cryptoss.beauty'
-      || session && session?.user?.email === 'doingdoit2@cryptoss.beauty'
-      || session && session?.user?.email === 'doingdoit3@cryptoss.beauty'
-      || session && session?.user?.email === 'doingdoit4@cryptoss.beauty'
-      || session && session?.user?.email === 'doingdoit5@cryptoss.beauty'
+      session && (session?.user?.email === 'admin@cryptopay.beauty'
+      || session && session?.user?.email === 'doingdoit1@cryptopay.beauty'
+      || session && session?.user?.email === 'doingdoit2@cryptopay.beauty'
+      || session && session?.user?.email === 'doingdoit3@cryptopay.beauty'
+      || session && session?.user?.email === 'doingdoit4@cryptopay.beauty'
+      || session && session?.user?.email === 'doingdoit5@cryptopay.beauty'
       */
-      //session && session?.user?.email?.includes('cryptoss.beauty') 
+      //session && session?.user?.email?.includes('cryptopay.beauty') 
          
 
       // check path is /
@@ -118,7 +118,7 @@ export default function HeliumLayout({
 {/*
 <div className="bg-dark felx sticky top-0 z-50 ">
               <Top1
-                logo="/usermain/images/logo-oneclick.png"
+                logo="/usermain/images/logo-goodtether.png"
                 topBackgroundColor="#fff"
                 topBorderBottom="1px solid #ddd"
                 topBoxSizing="border-box"

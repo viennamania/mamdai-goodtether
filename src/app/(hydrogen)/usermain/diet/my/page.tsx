@@ -59,7 +59,7 @@ export default function DietMyPage() {
     <div className="bg-dark sticky top-0 z-50 ">
 
     <Top1
-          logo="/usermain/images/logo-oneclick.png"
+          logo="/usermain/images/logo-goodtether.png"
           topBackgroundColor="#fff"
           topBorderBottom="1px solid #ddd"
           topBoxSizing="border-box"

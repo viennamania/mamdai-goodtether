@@ -914,7 +914,7 @@ export default function BoardPage({ params }: any) {
 
         <div className="bg-dark felx sticky top-0 z-50 ">
               <Top1
-                logo="/usermain/images/logo-oneclick.png"
+                logo="/usermain/images/logo-goodtether.png"
                 topBackgroundColor="#fff"
                 topBorderBottom="1px solid #ddd"
                 topBoxSizing="border-box"
@@ -1038,7 +1038,7 @@ export default function BoardPage({ params }: any) {
 
                           <Image
                             className="relative w-6 h-6 rounded-full "
-                            src={userAvatar || "https://cryptoss.beauty/usermain/images/avatar.svg"}
+                            src={userAvatar || "https://cryptopay.beauty/usermain/images/avatar.svg"}
                             alt=""
                             width={24}
                             height={24}

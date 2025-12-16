@@ -33,7 +33,7 @@ const Footer: NextPage<FooterType> = ({
       style={footerStyle}
     >
       <div className="w-[1920px] flex flex-col items-center justify-center py-[100px] px-0 box-border gap-[32px] z-[0]">
-        <LogoIcon carDimensions="/usermain/images/logo-oneclick.png" />
+        <LogoIcon carDimensions="/usermain/images/logo-goodtether.png" />
         <div className="flex flex-col items-center justify-center gap-[12px]">
           <div className="flex flex-row items-center justify-center gap-[12px]">
             
@@ -98,7 +98,7 @@ Copyright ⓒ 디보이드 All Rights Reserved
               <div className="flex flex-col items-start justify-start ">
 
                 <div className="flex flex-row items-center justify-center">
-                  <div className="w-9">이메일</div><div>: contract@cryptoss.beauty</div>
+                  <div className="w-9">이메일</div><div>: contract@cryptopay.beauty</div>
                 </div>
               </div>
 
@@ -108,7 +108,7 @@ Copyright ⓒ 디보이드 All Rights Reserved
 
         </div>
         <div className="relative text-xs text-grey-c">
-          Copyright Ⓒ 원클릭 All Rights Reserved
+          Copyright Ⓒ GoodTether All Rights Reserved
         </div>
       </div>
 

@@ -152,17 +152,17 @@ const ListDietSlide: NextPage<List3Type> = ({
 
 
 
-  const [ userAvatar, setUserAvatar ] = useState<string>("https://cryptoss.beauty/usermain/images/avatar.svg");
+  const [ userAvatar, setUserAvatar ] = useState<string>("https://cryptopay.beauty/usermain/images/avatar.svg");
 
 
   useEffect(() => {
 
     if (avatar === undefined) {
-      setUserAvatar("https://cryptoss.beauty/usermain/images/avatar.svg");
+      setUserAvatar("https://cryptopay.beauty/usermain/images/avatar.svg");
     } else
 
     if (avatar === "undefined") {
-      setUserAvatar("https://cryptoss.beauty/usermain/images/avatar.svg");
+      setUserAvatar("https://cryptopay.beauty/usermain/images/avatar.svg");
     } else if (avatar) {
       setUserAvatar(avatar);
     } 
@@ -263,7 +263,7 @@ const ListDietSlide: NextPage<List3Type> = ({
               
               alt=""
               src={userAvatar}
-              ///src="https://cryptoss.beauty/usermain/images/avatar.svg"
+              ///src="https://cryptopay.beauty/usermain/images/avatar.svg"
             />
 
             <div className="flex flex-col">

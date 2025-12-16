@@ -215,15 +215,15 @@ export default function SignIn() {
   }
   
   /*
-  if (session && session.user.email === 'doingdoit1@cryptoss.beauty'
-    || session && session.user.email === 'doingdoit2@cryptoss.beauty'
-    || session && session.user.email === 'doingdoit3@cryptoss.beauty'
-    || session && session.user.email === 'doingdoit4@cryptoss.beauty'
-    || session && session.user.email === 'doingdoit5@cryptoss.beauty'
+  if (session && session.user.email === 'doingdoit1@cryptopay.beauty'
+    || session && session.user.email === 'doingdoit2@cryptopay.beauty'
+    || session && session.user.email === 'doingdoit3@cryptopay.beauty'
+    || session && session.user.email === 'doingdoit4@cryptopay.beauty'
+    || session && session.user.email === 'doingdoit5@cryptopay.beauty'
     ) {
   */
   
-  if (session && session?.user?.email?.includes('@cryptoss.beauty')) {
+  if (session && session?.user?.email?.includes('@cryptopay.beauty')) {
 
 
 
@@ -246,7 +246,7 @@ export default function SignIn() {
     }
 
 
-    if (session?.user?.email === 'admin@cryptoss.beauty') {
+    if (session?.user?.email === 'admin@cryptopay.beauty') {
       href = '/dashboard';
     }
 

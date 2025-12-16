@@ -145,7 +145,7 @@ export default function HeliumSidebar({ className }: { className?: string }) {
       //let href = '';
 
 
-      if (session && session?.user?.email === 'admin@cryptoss.beauty') {
+      if (session && session?.user?.email === 'admin@cryptopay.beauty') {
         
         setHomeUrl('/dashboard');
 
@@ -210,7 +210,7 @@ export default function HeliumSidebar({ className }: { className?: string }) {
             aria-label="Site Logo">
 
             <Image
-              src="/logo-oneclick.png"
+              src="/logo-goodtether.png"
               alt={siteConfig.title}
               // className="dark:invert"
               width={250}
@@ -223,7 +223,7 @@ export default function HeliumSidebar({ className }: { className?: string }) {
         </div>
 
 
-        { session && session?.user?.email === 'admin@cryptoss.beauty' ? (
+        { session && session?.user?.email === 'admin@cryptopay.beauty' ? (
 
           <SimpleBar className="h-[calc(100%-80px)]">
             <div className="mt-4 pb-3 3xl:mt-6">
@@ -357,14 +357,14 @@ export default function HeliumSidebar({ className }: { className?: string }) {
         ) :
         
           /*
-          session && session?.user?.email === 'admin@cryptoss.beauty'
-          || session && session?.user?.email === 'doingdoit1@cryptoss.beauty'
-          || session && session?.user?.email === 'doingdoit2@cryptoss.beauty'
-          || session && session?.user?.email === 'doingdoit3@cryptoss.beauty'
-          || session && session?.user?.email === 'doingdoit4@cryptoss.beauty'
-          || session && session?.user?.email === 'doingdoit5@cryptoss.beauty'
+          session && session?.user?.email === 'admin@cryptopay.beauty'
+          || session && session?.user?.email === 'doingdoit1@cryptopay.beauty'
+          || session && session?.user?.email === 'doingdoit2@cryptopay.beauty'
+          || session && session?.user?.email === 'doingdoit3@cryptopay.beauty'
+          || session && session?.user?.email === 'doingdoit4@cryptopay.beauty'
+          || session && session?.user?.email === 'doingdoit5@cryptopay.beauty'
           */
-          session && session?.user?.email?.includes('cryptoss.beauty')
+          session && session?.user?.email?.includes('cryptopay.beauty')
 
          ? (
 

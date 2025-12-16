@@ -209,7 +209,7 @@ export default function HealthInfoPage() {
 
   if (
     session?.user?.email &&
-    session?.user?.email.includes ('@cryptoss.beauty')
+    session?.user?.email.includes ('@cryptopay.beauty')
   ) {
     signOut(
       {
@@ -228,7 +228,7 @@ export default function HealthInfoPage() {
 
           <div className="bg-dark felx sticky top-0 z-50 ">
               <Top1
-                logo="/usermain/images/logo-oneclick.png"
+                logo="/usermain/images/logo-goodtether.png"
                 topBackgroundColor="#fff"
                 topBorderBottom="1px solid #ddd"
                 topBoxSizing="border-box"

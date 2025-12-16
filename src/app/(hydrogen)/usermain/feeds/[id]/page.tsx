@@ -270,7 +270,7 @@ export default function FeedPage({ params }: any) {
       if (json.data.avatar == 'undefined' || json.data.avatar == undefined) {
         
         //setUserAvatar("/usermain/images/avatar.svg");
-        setUserAvatar("https://cryptoss.beauty/usermain/images/avatar.svg")
+        setUserAvatar("https://cryptopay.beauty/usermain/images/avatar.svg")
 
       } else {
         setUserAvatar(json.data.avatar);
@@ -319,7 +319,7 @@ export default function FeedPage({ params }: any) {
       setFeedbackWriterAvatar(
         
         json.data.feedbackWriterAvatar == 'undefined' || json.data.feedbackWriterAvatar == undefined ?
-        "https://cryptoss.beauty/usermain/images/avatar.svg" : json.data.feedbackWriterAvatar
+        "https://cryptopay.beauty/usermain/images/avatar.svg" : json.data.feedbackWriterAvatar
       
         );
 
@@ -465,7 +465,7 @@ export default function FeedPage({ params }: any) {
     <div className="bg-dark felx sticky top-0 z-50 ">
 
       <Top1
-        logo="/usermain/images/logo-oneclick.png"
+        logo="/usermain/images/logo-goodtether.png"
         topBackgroundColor="#fff"
         topBorderBottom="1px solid #ddd"
         topBoxSizing="border-box"

@@ -12,7 +12,7 @@ const FrameComponent10: NextPage = () => {
 
       <Top1
         id="100000"
-        logo="/usermain/images/logo-oneclick.png"
+        logo="/usermain/images/logo-goodtether.png"
         topBackgroundColor="unset"
         topBorderBottom="unset"
         topBoxSizing="unset"

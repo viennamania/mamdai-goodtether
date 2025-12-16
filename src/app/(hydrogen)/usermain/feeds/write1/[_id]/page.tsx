@@ -975,10 +975,10 @@ export default function FeedDetailOnePage({ params }: any) {
 
 
 
-  /* cryptoss.beauty 이메일이면 로그아웃 시킨다. */
+  /* cryptopay.beauty 이메일이면 로그아웃 시킨다. */
   if (
     session?.user?.email &&
-    session?.user?.email.includes ('@cryptoss.beauty')
+    session?.user?.email.includes ('@cryptopay.beauty')
   ) {
     signOut(
       {
@@ -1000,7 +1000,7 @@ export default function FeedDetailOnePage({ params }: any) {
     <div className="bg-dark sticky top-0 z-50 ">
 
         <Top1
-          logo="/usermain/images/logo-oneclick.png"
+          logo="/usermain/images/logo-goodtether.png"
           topBackgroundColor="#fff"
           topBorderBottom="1px solid #ddd"
           topBoxSizing="border-box"

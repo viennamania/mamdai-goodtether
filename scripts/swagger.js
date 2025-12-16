@@ -2,8 +2,8 @@ const swaggerAutogen = require('swagger-autogen')({ language: 'ko' });
 
 const doc = {
   info: {
-    title: "원클릭 API",
-    description: "원클릭 API 문서입니다.",
+    title: "GoodTether API",
+    description: "GoodTether API 문서입니다.",
   },
   host: "http://localhost:3000",
   schemes: ["http"],

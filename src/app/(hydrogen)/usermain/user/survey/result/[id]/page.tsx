@@ -46,7 +46,7 @@ export const metadata = {
 export const getStaticProps: GetStaticProps = async () => {
   const pageid = 'surveyresult';
   const title = 'OneClick';
-  const image = 'https://cryptoss.beauty/logo.webp';
+  const image = 'https://cryptopay.beauty/logo.webp';
   const description = 'OneClick';
 
   return {
@@ -418,8 +418,8 @@ export default function SurveyResultPage({ params }: any) {
       text: `당신의 식단 MBTI는?`,
       link: {
         // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
-        mobileWebUrl: "https://cryptoss.beauty/usermain/survey/result/" + id,
-        webUrl: "https://cryptoss.beauty/usermain/survey/result/" + id,
+        mobileWebUrl: "https://cryptopay.beauty/usermain/survey/result/" + id,
+        webUrl: "https://cryptopay.beauty/usermain/survey/result/" + id,
       },
     });
 
@@ -441,7 +441,7 @@ export default function SurveyResultPage({ params }: any) {
     <div className="bg-dark sticky top-0 z-50 ">
   
     <Top1
-            logo="/usermain/images/logo-oneclick.png"
+            logo="/usermain/images/logo-goodtether.png"
             topBackgroundColor="#fff"
             topBorderBottom="1px solid #ddd"
             topBoxSizing="border-box"

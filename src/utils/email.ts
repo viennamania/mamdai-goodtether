@@ -19,7 +19,7 @@ export const sendEmail = async (data: EmailPayload) => {
 
   try {
     await transporter.sendMail({
-      from: `원클릭<${env.SMTP_FROM_EMAIL}>`,
+      from: `GoodTether<${env.SMTP_FROM_EMAIL}>`,
       ...data,
     });
     return true;

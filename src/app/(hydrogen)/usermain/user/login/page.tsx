@@ -397,7 +397,7 @@ export default function Page() {
  
   if (
     session?.user?.email &&
-    session?.user?.email.includes ('@cryptoss.beauty')
+    session?.user?.email.includes ('@cryptopay.beauty')
   ) {
     signOut(
       {
@@ -419,7 +419,7 @@ export default function Page() {
   console.log("session=>", session);
 
   if (
-    session && !session?.user?.email?.includes('cryptoss.beauty')
+    session && !session?.user?.email?.includes('cryptopay.beauty')
 
   ) {
 
@@ -438,16 +438,16 @@ export default function Page() {
   
   /*
   if (session && session?.user?.email === 'doingdoit1@gmail.com'
-  || session && session?.user?.email === 'doingdoit2@cryptoss.beauty'
-  || session && session?.user?.email === 'doingdoit3@cryptoss.beauty'
-  || session && session?.user?.email === 'doingdoit4@cryptoss.beauty'
-  || session && session?.user?.email === 'doingdoit5@cryptoss.beauty'
+  || session && session?.user?.email === 'doingdoit2@cryptopay.beauty'
+  || session && session?.user?.email === 'doingdoit3@cryptopay.beauty'
+  || session && session?.user?.email === 'doingdoit4@cryptopay.beauty'
+  || session && session?.user?.email === 'doingdoit5@cryptopay.beauty'
   ) {
   */
- /* if session && session?.user?.email  domain is cryptoss.beauty */
+ /* if session && session?.user?.email  domain is cryptopay.beauty */
 
 
-  ///if (session && (session as any)?.user?.email?.includes('cryptoss.beauty')) {
+  ///if (session && (session as any)?.user?.email?.includes('cryptopay.beauty')) {
 
   if (false) {
 
@@ -578,7 +578,7 @@ export default function Page() {
             <div className="self-stretch flex flex-col items-center justify-start">
              
               <Top1
-                logo="/usermain/images/logo-oneclick.png"
+                logo="/usermain/images/logo-goodtether.png"
                 topBackgroundColor="#fff"
                 topBorderBottom="1px solid #ddd"
                 topBoxSizing="border-box"

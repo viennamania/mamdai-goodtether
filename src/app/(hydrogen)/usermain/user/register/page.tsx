@@ -601,7 +601,7 @@ export default function Register() {
           <div className="self-stretch flex flex-col items-center justify-start">
             
               <Top1
-                logo="/usermain/images/logo-oneclick.png"
+                logo="/usermain/images/logo-goodtether.png"
                 topBackgroundColor="#fff"
                 topBorderBottom="1px solid #ddd"
                 topBoxSizing="border-box"
@@ -1374,7 +1374,7 @@ export default function Register() {
                               style = {{ objectFit: 'cover' }}
                               /* loading animation */
                               placeholder="blur"
-                              blurDataURL="https://cryptoss.beauty/usermain/images/avatar.svg"
+                              blurDataURL="https://cryptopay.beauty/usermain/images/avatar.svg"
                             />
 
                           )}

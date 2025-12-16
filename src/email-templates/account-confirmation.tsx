@@ -36,7 +36,7 @@ export default function VercelInviteUserEmail(
             />
           </Section>
           <Heading style={heading}>
-            <strong>원클릭</strong>
+            <strong>GoodTether</strong>
           </Heading>
           <Text style={subheading}>
             Hello <strong>{username}</strong>, (

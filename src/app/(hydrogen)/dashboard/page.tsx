@@ -67,11 +67,11 @@ export default function DashboardPage() {
 
   //if (status === 'unauthenticated') return <div>Unauthenticated</div>;
 
-  // if user email is not '@cryptoss.beauty', logout and callback '/signin'
+  // if user email is not '@cryptopay.beauty', logout and callback '/signin'
 
   if (
     session?.user?.email &&
-    !session?.user?.email.includes ('@cryptoss.beauty')
+    !session?.user?.email.includes ('@cryptopay.beauty')
   ) {
     signOut(
       {

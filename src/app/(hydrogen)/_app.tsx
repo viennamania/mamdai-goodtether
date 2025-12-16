@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
     const title = 'OneClick';
     const description = 'OneClick';
-    const image = 'https://cryptoss.beauty/logo.webp';
+    const image = 'https://cryptopay.beauty/logo.webp';
 
 
 

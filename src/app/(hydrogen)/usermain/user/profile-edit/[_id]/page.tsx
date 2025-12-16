@@ -144,7 +144,7 @@ export default function ProfileEditPage({ params }: any) {
           if (json.data.avatar == 'undefined' || json.data.avatar == undefined) {
             
             //setUserAvatar("/usermain/images/avatar.svg");
-            setUserAvatar("https://cryptoss.beauty/usermain/images/avatar.svg")
+            setUserAvatar("https://cryptopay.beauty/usermain/images/avatar.svg")
 
           } else {
             setUserAvatar(json.data.avatar);
@@ -415,7 +415,7 @@ export default function ProfileEditPage({ params }: any) {
 
             <div className="self-stretch flex flex-col items-center justify-start">
               <Top1
-                logo="/usermain/images/logo-oneclick.png"
+                logo="/usermain/images/logo-goodtether.png"
                 topBackgroundColor="#fff"
                 topBorderBottom="1px solid #ddd"
                 topBoxSizing="border-box"
@@ -493,7 +493,7 @@ export default function ProfileEditPage({ params }: any) {
                                   style = {{ objectFit: 'cover' }}
                                   /* loading animation */
                                   placeholder="blur"
-                                  blurDataURL="https://cryptoss.beauty/usermain/images/avatar.svg"
+                                  blurDataURL="https://cryptopay.beauty/usermain/images/avatar.svg"
                                 />
 
                               )}
@@ -510,7 +510,7 @@ export default function ProfileEditPage({ params }: any) {
                               style = {{ objectFit: 'cover' }}
                   
                               placeholder="blur"
-                              blurDataURL="https://cryptoss.beauty/usermain/images/avatar.svg"
+                              blurDataURL="https://cryptopay.beauty/usermain/images/avatar.svg"
                             />
                             */}
                           </div>

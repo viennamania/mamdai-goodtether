@@ -198,7 +198,7 @@ const ListFeed: NextPage<List3Type> = ({
   }, [controls, inView]);
 
 
-  const [ userAvatar, setUserAvatar ] = useState<string>("https://cryptoss.beauty/usermain/images/avatar.svg");
+  const [ userAvatar, setUserAvatar ] = useState<string>("https://cryptopay.beauty/usermain/images/avatar.svg");
 
 
     
@@ -265,7 +265,7 @@ const ListFeed: NextPage<List3Type> = ({
             
 
               style = {{ objectFit: 'cover' }}
-              ///src="https://cryptoss.beauty/usermain/images/avatar.svg"
+              ///src="https://cryptopay.beauty/usermain/images/avatar.svg"
             />
             <div className="flex flex-col items-start justify-center">
               <span className="font-extrabold flex  ">
@@ -532,13 +532,13 @@ const ListFeed: NextPage<List3Type> = ({
             alt=""
             src={
               feedbackWriterAvatar && feedbackWriterAvatar !== undefined && feedbackWriterAvatar !== "undefined" && feedbackWriterAvatar !== "null" 
-              ? feedbackWriterAvatar : "https://cryptoss.beauty/usermain/images/avatar.svg"
+              ? feedbackWriterAvatar : "https://cryptopay.beauty/usermain/images/avatar.svg"
 
               ///"/usermain/images/avatar.svg"
             }
             style = {{ objectFit: 'cover' }}
 
-            ///src="https://cryptoss.beauty/usermain/images/avatar.svg"
+            ///src="https://cryptopay.beauty/usermain/images/avatar.svg"
           />
           
 

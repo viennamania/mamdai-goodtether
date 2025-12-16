@@ -121,7 +121,7 @@ export default function SignInForm() {
       
   
       /*
-      const email = data.id + "@cryptoss.beauty";
+      const email = data.id + "@cryptopay.beauty";
       const response = await fetch(`/api/doingdoit/user/getUserByEmail?_email=${email}`);
       const json = await response?.json();
 

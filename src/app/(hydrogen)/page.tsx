@@ -57,7 +57,7 @@ export default function HomePage() {
 
 
   /*
-  if (status === 'authenticated' && session.user.email === 'admin@cryptoss.beauty') {
+  if (status === 'authenticated' && session.user.email === 'admin@cryptopay.beauty') {
 
 
     window.location.href = '/dashboard';
