@@ -108,7 +108,7 @@ Copyright ⓒ 디보이드 All Rights Reserved
 
         </div>
         <div className="relative text-xs text-grey-c">
-          Copyright Ⓒ GoodTether All Rights Reserved
+          Copyright Ⓒ OrangeX All Rights Reserved
         </div>
       </div>
 

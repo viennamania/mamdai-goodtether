@@ -435,13 +435,13 @@ const ComponentHealthHome: NextPage = () => {
               </Link>
             </motion.div>
 
-            {/* 필독! GoodTether이 전하는 */}
+            {/* 필독! OrangeX이 전하는 */}
             {/* 테더정보 */}
             {/* when xl screen  don't break line */}
             {/* when lg screen  break line */}
 
             <div className="self-stretch relative flex flex-col xl:flex-row gap-1 text-xl xl:text-17xl font-jalnan text-left">
-              <span>필독! GoodTether이 전하는</span>
+              <span>필독! OrangeX이 전하는</span>
               <span className="xl:pl-1">테더정보</span>
 
             </div>

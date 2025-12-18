@@ -55,7 +55,7 @@ export const authOptions: NextAuthOptions = {
         // that is false/null if the credentials are invalid
 
         const user = {
-          email: 'admin@admin.com',
+          email: 'admin@orangex.center',
           password: 'admin',
         };
 

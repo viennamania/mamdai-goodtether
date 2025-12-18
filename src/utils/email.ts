@@ -19,7 +19,7 @@ export const sendEmail = async (data: EmailPayload) => {
 
   try {
     await transporter.sendMail({
-      from: `GoodTether<${env.SMTP_FROM_EMAIL}>`,
+      from: `OrangeX<${env.SMTP_FROM_EMAIL}>`,
       ...data,
     });
     return true;

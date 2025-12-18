@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "GoodTether API",
-    "description": "GoodTether API 문서입니다.",
+    "title": "OrangeX API",
+    "description": "OrangeX API 문서입니다.",
     "version": "1.0.0"
   },
   "host": "http://localhost:3000",

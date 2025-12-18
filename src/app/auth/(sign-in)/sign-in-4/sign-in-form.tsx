@@ -13,7 +13,7 @@ import { routes } from '@/config/routes';
 import { loginSchema, LoginSchema } from '@/utils/validators/login.schema';
 
 const initialValues: LoginSchema = {
-  email: 'admin@admin.com',
+  email: 'admin@orangex.center',
   password: 'admin',
   rememberMe: true,
 };

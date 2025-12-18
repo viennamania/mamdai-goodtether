@@ -14,8 +14,8 @@ enum MODE {
 }
 
 export const siteConfig = {
-  title: 'GoodTether',
-  description: `GoodTether`,
+  title: 'OrangeX',
+  description: `OrangeX`,
   logo: logoImg,
   icon: logoIconImg,
   
@@ -36,13 +36,13 @@ export const metaObject = (
   description: string = siteConfig.description
 ): Metadata => {
   return {
-    title: title ? `${title} - GoodTether` : siteConfig.title,
+    title: title ? `${title} - OrangeX` : siteConfig.title,
     description,
     openGraph: openGraph ?? {
-      title: title ? `${title} - GoodTether` : title,
+      title: title ? `${title} - OrangeX` : title,
       description,
       url: 'https://orangex.center',
-      siteName: 'GoodTether', // https://developers.google.com/search/docs/appearance/site-names
+      siteName: 'OrangeX', // https://developers.google.com/search/docs/appearance/site-names
       images: {
         url: 'https://orangex.center/logo.webp',
         width: 1200,
