@@ -96,20 +96,29 @@ Copyright ⓒ 디보이드 All Rights Reserved
 
 
               <div className="flex flex-col items-start justify-start ">
-
                 <div className="flex flex-row items-center justify-center">
                   <div className="w-9">이메일</div><div>: contract@orangex.center</div>
                 </div>
               </div>
+
+              {/* 14F, Corner St. Paul & Tombs of the Kings, 8046 Pafos, Cyprus */}
+              <div className="flex flex-col items-start justify-start ">
+                <div className="flex flex-row items-center justify-center">
+                  <div className=" w-9 ">주소</div><div>: 14F, Corner St. Paul & Tombs of the Kings, 8046 Pafos, Cyprus</div>
+                </div>
+              </div>
+
 
               
             </div>
           </div>
 
         </div>
+
         <div className="relative text-xs text-grey-c">
           Copyright Ⓒ OrangeX All Rights Reserved
         </div>
+
       </div>
 
       
