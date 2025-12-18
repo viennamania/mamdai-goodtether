@@ -3,12 +3,14 @@ import { NextResponse } from 'next/server'
 import { customAlphabet } from 'nanoid'
 
 export const dynamic = 'force-dynamic'
-export const runtime = 'edge'
+// Remove edge runtime as it's causing global variable issues
+// export const runtime = 'edge'
 
 const nanoid = customAlphabet(
   '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',
   7
 ) // 7-character random string
+
 export async function POST(req: Request) {
   const file = req.body || ''
   const contentType = req.headers.get('content-type') || 'text/plain'

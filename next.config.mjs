@@ -114,6 +114,7 @@ const nextConfig = {
         'typeof window': JSON.stringify(isServer ? 'undefined' : 'object'),
         'typeof self': JSON.stringify(isServer ? 'undefined' : 'object'),
         'typeof global': JSON.stringify('object'),
+        global: isServer ? 'global' : 'globalThis',
       })
     );
     
