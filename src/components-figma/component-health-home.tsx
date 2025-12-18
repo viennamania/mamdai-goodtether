@@ -441,8 +441,12 @@ const ComponentHealthHome: NextPage = () => {
             {/* when lg screen  break line */}
 
             <div className="self-stretch relative flex flex-col xl:flex-row gap-1 text-xl xl:text-17xl font-jalnan text-left">
-              <span>필독! OrangeX이 전하는</span>
-              <span className="xl:pl-1">테더정보</span>
+              <span className="xl:pl-1">
+                테더의 모든 정보,
+              </span>
+              <span className="xl:pl-1">
+                OrangeX에서 확인하세요!
+              </span>
 
             </div>
 

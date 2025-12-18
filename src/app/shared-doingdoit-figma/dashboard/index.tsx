@@ -95,7 +95,7 @@ export default function Dashboard() {
     <div className=" bg-dark sticky top-0 z-50 ">
 
       <Top1
-        logo="/usermain/images/logo-goodtether.png"
+        logo="/usermain/images/logo-orangex.webp"
         topBackgroundColor="unset"
         topBorderBottom="unset"
         topBoxSizing="unset"

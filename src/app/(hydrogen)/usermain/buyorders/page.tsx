@@ -298,7 +298,7 @@ export default function BuyerOrdersPage() {
 
     <div className="bg-dark felx sticky top-0 z-50 ">
               <Top1
-                logo="/usermain/images/logo-goodtether.png"
+                logo="/usermain/images/logo-orangex.webp"
                 topBackgroundColor="#fff"
                 topBorderBottom="1px solid #ddd"
                 topBoxSizing="border-box"

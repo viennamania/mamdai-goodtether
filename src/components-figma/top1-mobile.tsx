@@ -382,27 +382,30 @@ const Top1: NextPage<Top1Type> = ({
 
         <div className=" hidden xl:flex flex-row items-center justify-center">
 
-
-        <motion.div
-          className="box"
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <Link
-            href="/usermain/feeds"
-            ///style={{ textDecoration: 'none' }}
-        
-            className=" w-[70px] xl:w-[100px] h-14 flex flex-row items-center justify-start"
-            style={frameDivStyle  }
+          
+          <motion.div
+            className="box"
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
+            <Link
+              //href="/usermain/feeds"
+              href="#"
 
-            <div className="flex-1 relative font-extrabold" style={div1Style}>
-                구매주문            
-            </div>
 
-          </Link>
+              ///style={{ textDecoration: 'none' }}
+          
+              className=" w-[70px] xl:w-[100px] h-14 flex flex-row items-center justify-start"
+              style={frameDivStyle  }
+            >
+
+              <div className="flex-1 relative font-extrabold" style={div1Style}>
+                  구매주문            
+              </div>
+
+            </Link>
           </motion.div>
 
           {/*

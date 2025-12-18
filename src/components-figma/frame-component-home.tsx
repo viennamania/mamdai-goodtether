@@ -78,8 +78,10 @@ const FrameComponentHome: NextPage = () => {
     <div className="bg-dark flex flex-col items-center justify-start text-center text-45xl text-orange font-montserrat w-full">
 
       
-
-      <div className="flex flex-col items-center justify-start  py-[30px]  xl:py-[100px] gap-[40px]  xl:gap-[60px]">
+    
+      <div className="
+      hidden
+       flex-col items-center justify-start  py-[30px]  xl:py-[100px] gap-[40px]  xl:gap-[60px]">
         
 
         <motion.div

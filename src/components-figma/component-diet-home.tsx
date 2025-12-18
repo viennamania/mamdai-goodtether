@@ -466,7 +466,9 @@ const ComponentDietHome: NextPage = () => {
 
   return (
 
-    <div className="self-stretch bg-white flex flex-col items-start xl:items-center justify-start py-[50px]  xl:py-[100px] px-5  xl:px-0 text-center text-sm text-dark font-menu-off">
+    <div className="
+      hidden
+      self-stretch bg-white flex-col items-start xl:items-center justify-start py-[50px]  xl:py-[100px] px-5  xl:px-0 text-center text-sm text-dark font-menu-off">
  
 
         <div className="w-full xl:w-[1000px] flex flex-col items-center justify-start gap-[40px] ">

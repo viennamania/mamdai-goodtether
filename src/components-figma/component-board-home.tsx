@@ -250,8 +250,8 @@ const ComponentBoardHome: NextPage = () => {
             {/* when lg screen  break line */}
 
             <div className="self-stretch relative flex flex-col xl:flex-row gap-1 text-xl xl:text-17xl font-jalnan text-left">
-              <span>이주의 인기글을</span>
-              <span className="xl:pl-1">만나보세요!</span>
+              <span>인기글 모아보기</span>
+              <span className="xl:pl-1">OrangeX에서!</span>
 
             </div>
 
