@@ -97,7 +97,7 @@ Copyright ⓒ 디보이드 All Rights Reserved
 
               <div className="flex flex-col items-start justify-start ">
                 <div className="flex flex-row items-center justify-center">
-                  <div className="w-9">이메일</div><div>: contract@orangex.center</div>
+                  <div className="w-9">이메일</div><div>: help@orangex.center</div>
                 </div>
               </div>
 
