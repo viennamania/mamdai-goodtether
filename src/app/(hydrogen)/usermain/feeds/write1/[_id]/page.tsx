@@ -975,10 +975,10 @@ export default function FeedDetailOnePage({ params }: any) {
 
 
 
-  /* cryptopay.beauty 이메일이면 로그아웃 시킨다. */
+  /* orangex.center 이메일이면 로그아웃 시킨다. */
   if (
     session?.user?.email &&
-    session?.user?.email.includes ('@cryptopay.beauty')
+    session?.user?.email.includes ('@orangex.center')
   ) {
     signOut(
       {

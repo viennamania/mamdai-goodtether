@@ -397,7 +397,7 @@ export default function Page() {
  
   if (
     session?.user?.email &&
-    session?.user?.email.includes ('@cryptopay.beauty')
+    session?.user?.email.includes ('@orangex.center')
   ) {
     signOut(
       {
@@ -419,7 +419,7 @@ export default function Page() {
   console.log("session=>", session);
 
   if (
-    session && !session?.user?.email?.includes('cryptopay.beauty')
+    session && !session?.user?.email?.includes('orangex.center')
 
   ) {
 
@@ -438,16 +438,16 @@ export default function Page() {
   
   /*
   if (session && session?.user?.email === 'doingdoit1@gmail.com'
-  || session && session?.user?.email === 'doingdoit2@cryptopay.beauty'
-  || session && session?.user?.email === 'doingdoit3@cryptopay.beauty'
-  || session && session?.user?.email === 'doingdoit4@cryptopay.beauty'
-  || session && session?.user?.email === 'doingdoit5@cryptopay.beauty'
+  || session && session?.user?.email === 'doingdoit2@orangex.center'
+  || session && session?.user?.email === 'doingdoit3@orangex.center'
+  || session && session?.user?.email === 'doingdoit4@orangex.center'
+  || session && session?.user?.email === 'doingdoit5@orangex.center'
   ) {
   */
- /* if session && session?.user?.email  domain is cryptopay.beauty */
+ /* if session && session?.user?.email  domain is orangex.center */
 
 
-  ///if (session && (session as any)?.user?.email?.includes('cryptopay.beauty')) {
+  ///if (session && (session as any)?.user?.email?.includes('orangex.center')) {
 
   if (false) {
 

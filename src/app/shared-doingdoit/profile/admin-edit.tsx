@@ -388,7 +388,7 @@ export default function AdminEdit({
       },
       body: JSON.stringify({
         id: id,
-        email: loginId + '@cryptopay.beauty',
+        email: loginId + '@orangex.center',
         loginId: loginId,
         password: loginPassword,
         regType: 'email',

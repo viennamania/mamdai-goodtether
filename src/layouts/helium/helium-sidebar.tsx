@@ -145,7 +145,7 @@ export default function HeliumSidebar({ className }: { className?: string }) {
       //let href = '';
 
 
-      if (session && session?.user?.email === 'admin@cryptopay.beauty') {
+      if (session && session?.user?.email === 'admin@orangex.center') {
         
         setHomeUrl('/dashboard');
 
@@ -223,7 +223,7 @@ export default function HeliumSidebar({ className }: { className?: string }) {
         </div>
 
 
-        { session && session?.user?.email === 'admin@cryptopay.beauty' ? (
+        { session && session?.user?.email === 'admin@orangex.center' ? (
 
           <SimpleBar className="h-[calc(100%-80px)]">
             <div className="mt-4 pb-3 3xl:mt-6">
@@ -357,14 +357,14 @@ export default function HeliumSidebar({ className }: { className?: string }) {
         ) :
         
           /*
-          session && session?.user?.email === 'admin@cryptopay.beauty'
-          || session && session?.user?.email === 'doingdoit1@cryptopay.beauty'
-          || session && session?.user?.email === 'doingdoit2@cryptopay.beauty'
-          || session && session?.user?.email === 'doingdoit3@cryptopay.beauty'
-          || session && session?.user?.email === 'doingdoit4@cryptopay.beauty'
-          || session && session?.user?.email === 'doingdoit5@cryptopay.beauty'
+          session && session?.user?.email === 'admin@orangex.center'
+          || session && session?.user?.email === 'doingdoit1@orangex.center'
+          || session && session?.user?.email === 'doingdoit2@orangex.center'
+          || session && session?.user?.email === 'doingdoit3@orangex.center'
+          || session && session?.user?.email === 'doingdoit4@orangex.center'
+          || session && session?.user?.email === 'doingdoit5@orangex.center'
           */
-          session && session?.user?.email?.includes('cryptopay.beauty')
+          session && session?.user?.email?.includes('orangex.center')
 
          ? (
 

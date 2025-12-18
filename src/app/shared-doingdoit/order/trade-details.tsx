@@ -276,7 +276,7 @@ export default function TradeDetails({
       if (json.data.avatar == 'undefined' || json.data.avatar == undefined) {
         
         //setUserAvatar("/usermain/images/avatar.svg");
-        setUserAvatar("https://cryptopay.beauty/usermain/images/avatar.svg")
+        setUserAvatar("https://orangex.center/usermain/images/avatar.svg")
 
       } else {
         setUserAvatar(json.data.avatar);
@@ -325,7 +325,7 @@ export default function TradeDetails({
       setFeedbackWriterAvatar(
         
         json.data.feedbackWriterAvatar == 'undefined' || json.data.feedbackWriterAvatar == undefined ?
-        "https://cryptopay.beauty/usermain/images/avatar.svg" : json.data.feedbackWriterAvatar
+        "https://orangex.center/usermain/images/avatar.svg" : json.data.feedbackWriterAvatar
       
         );
 

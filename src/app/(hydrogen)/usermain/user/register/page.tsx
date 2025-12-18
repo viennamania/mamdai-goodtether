@@ -1374,7 +1374,7 @@ export default function Register() {
                               style = {{ objectFit: 'cover' }}
                               /* loading animation */
                               placeholder="blur"
-                              blurDataURL="https://cryptopay.beauty/usermain/images/avatar.svg"
+                              blurDataURL="https://orangex.center/usermain/images/avatar.svg"
                             />
 
                           )}

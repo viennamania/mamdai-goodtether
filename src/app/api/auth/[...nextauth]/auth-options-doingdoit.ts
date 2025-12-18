@@ -143,17 +143,17 @@ export const authOptions: NextAuthOptions = {
         /*
         
         if (credentials?.id === 'admin') {
-          userId = 'admin@cryptopay.beauty';
+          userId = 'admin@orangex.center';
         } else if (credentials?.id === 'doingdoit1') {
-          userId = 'doingdoit1@cryptopay.beauty';
+          userId = 'doingdoit1@orangex.center';
         } else if (credentials?.id === 'doingdoit2') {
-          userId = 'doingdoit2@cryptopay.beauty';
+          userId = 'doingdoit2@orangex.center';
         } else if (credentials?.id === 'doingdoit3') {
-          userId = 'doingdoit3@cryptopay.beauty';
+          userId = 'doingdoit3@orangex.center';
         } else if (credentials?.id === 'doingdoit4') {
-          userId = 'doingdoit4@cryptopay.beauty';
+          userId = 'doingdoit4@orangex.center';
         } else if (credentials?.id === 'doingdoit5') {
-          userId = 'doingdoit5@cryptopay.beauty';
+          userId = 'doingdoit5@orangex.center';
         }
 
 

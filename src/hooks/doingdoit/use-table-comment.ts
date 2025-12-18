@@ -375,7 +375,7 @@ export function useTable<T extends AnyObject>(
   
 
   
-      if (session?.user?.email == 'admin@cryptopay.beauty') {
+      if (session?.user?.email == 'admin@orangex.center') {
   
 
 

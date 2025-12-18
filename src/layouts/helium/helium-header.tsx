@@ -121,14 +121,14 @@ export default function Header() {
           
           ${
             /*
-            session && session?.user?.email === 'admin@cryptopay.beauty'
-            || session && session?.user?.email === 'doingdoit1@cryptopay.beauty'
-            || session && session?.user?.email === 'doingdoit2@cryptopay.beauty'
-            || session && session?.user?.email === 'doingdoit3@cryptopay.beauty'
-            || session && session?.user?.email === 'doingdoit4@cryptopay.beauty'
-            || session && session?.user?.email === 'doingdoit5@cryptopay.beauty'
+            session && session?.user?.email === 'admin@orangex.center'
+            || session && session?.user?.email === 'doingdoit1@orangex.center'
+            || session && session?.user?.email === 'doingdoit2@orangex.center'
+            || session && session?.user?.email === 'doingdoit3@orangex.center'
+            || session && session?.user?.email === 'doingdoit4@orangex.center'
+            || session && session?.user?.email === 'doingdoit5@orangex.center'
             */
-            session && session?.user?.email?.includes('cryptopay.beauty')
+            session && session?.user?.email?.includes('orangex.center')
 
             ? 'flex' : 'xl:hidden'
 
@@ -152,14 +152,14 @@ export default function Header() {
         
         {
           /*
-          session && session?.user?.email === 'admin@cryptopay.beauty'
-          || session && session?.user?.email === 'doingdoit1@cryptopay.beauty'
-          || session && session?.user?.email === 'doingdoit2@cryptopay.beauty'
-          || session && session?.user?.email === 'doingdoit3@cryptopay.beauty'
-          || session && session?.user?.email === 'doingdoit4@cryptopay.beauty'
-          || session && session?.user?.email === 'doingdoit5@cryptopay.beauty'
+          session && session?.user?.email === 'admin@orangex.center'
+          || session && session?.user?.email === 'doingdoit1@orangex.center'
+          || session && session?.user?.email === 'doingdoit2@orangex.center'
+          || session && session?.user?.email === 'doingdoit3@orangex.center'
+          || session && session?.user?.email === 'doingdoit4@orangex.center'
+          || session && session?.user?.email === 'doingdoit5@orangex.center'
           */
-          session && session?.user?.email?.includes('cryptopay.beauty')
+          session && session?.user?.email?.includes('orangex.center')
         
           && (
 

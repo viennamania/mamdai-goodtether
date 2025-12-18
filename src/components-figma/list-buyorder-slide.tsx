@@ -212,7 +212,7 @@ const ListBuyOrderSlide: NextPage<List3Type> = ({
                 
                 alt=""
                 src='/usermain/images/icon-user.png'
-                ///src="https://cryptopay.beauty/usermain/images/avatar.svg"
+                ///src="https://orangex.center/usermain/images/avatar.svg"
               />
 
               <div className="flex flex-col">

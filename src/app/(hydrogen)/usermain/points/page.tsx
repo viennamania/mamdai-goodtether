@@ -157,7 +157,7 @@ export default function PointPage() {
 
   if (
     session?.user?.email &&
-    session?.user?.email.includes ('@cryptopay.beauty')
+    session?.user?.email.includes ('@orangex.center')
   ) {
     signOut(
       {

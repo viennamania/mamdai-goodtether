@@ -41,10 +41,10 @@ export const metaObject = (
     openGraph: openGraph ?? {
       title: title ? `${title} - GoodTether` : title,
       description,
-      url: 'https://cryptopay.beauty',
+      url: 'https://orangex.center',
       siteName: 'GoodTether', // https://developers.google.com/search/docs/appearance/site-names
       images: {
-        url: 'https://cryptopay.beauty/logo.webp',
+        url: 'https://orangex.center/logo.webp',
         width: 1200,
         height: 630,
       },

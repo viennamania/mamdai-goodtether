@@ -321,7 +321,7 @@ export default function ProfileEditPage() {
 
                         /* loading animation */
                         placeholder="blur"
-                        blurDataURL="https://cryptopay.beauty/usermain/images/avatar.svg"
+                        blurDataURL="https://orangex.center/usermain/images/avatar.svg"
                       />
                     </div>
 

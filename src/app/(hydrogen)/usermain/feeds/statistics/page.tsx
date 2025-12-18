@@ -21,7 +21,7 @@ const Frame13: NextPage = () => {
   const { data: session, status } = useSession();
   if (
     session?.user?.email &&
-    session?.user?.email.includes ('@cryptopay.beauty')
+    session?.user?.email.includes ('@orangex.center')
   ) {
     signOut(
       {

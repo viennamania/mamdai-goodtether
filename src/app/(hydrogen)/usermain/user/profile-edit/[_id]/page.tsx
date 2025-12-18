@@ -144,7 +144,7 @@ export default function ProfileEditPage({ params }: any) {
           if (json.data.avatar == 'undefined' || json.data.avatar == undefined) {
             
             //setUserAvatar("/usermain/images/avatar.svg");
-            setUserAvatar("https://cryptopay.beauty/usermain/images/avatar.svg")
+            setUserAvatar("https://orangex.center/usermain/images/avatar.svg")
 
           } else {
             setUserAvatar(json.data.avatar);
@@ -493,7 +493,7 @@ export default function ProfileEditPage({ params }: any) {
                                   style = {{ objectFit: 'cover' }}
                                   /* loading animation */
                                   placeholder="blur"
-                                  blurDataURL="https://cryptopay.beauty/usermain/images/avatar.svg"
+                                  blurDataURL="https://orangex.center/usermain/images/avatar.svg"
                                 />
 
                               )}
@@ -510,7 +510,7 @@ export default function ProfileEditPage({ params }: any) {
                               style = {{ objectFit: 'cover' }}
                   
                               placeholder="blur"
-                              blurDataURL="https://cryptopay.beauty/usermain/images/avatar.svg"
+                              blurDataURL="https://orangex.center/usermain/images/avatar.svg"
                             />
                             */}
                           </div>

@@ -541,7 +541,7 @@ const Top1: NextPage<Top1Type> = ({
         <div className="flex">
 
 
-          {session?.user && userId && !session?.user?.email?.includes('@cryptopay.beauty')
+          {session?.user && userId && !session?.user?.email?.includes('@orangex.center')
           ? (
 
             <div className="flex flex-row items-center justify-center gap-[5px]  xl:gap-[20px] text-7xs text-white">
@@ -619,7 +619,7 @@ const Top1: NextPage<Top1Type> = ({
 
                   {
 
-                    (session?.user?.email?.includes('@cryptopay.beauty') === true) ? (
+                    (session?.user?.email?.includes('@orangex.center') === true) ? (
                       <button
                         onClick={() => signOut({
                           callbackUrl: '/signin'

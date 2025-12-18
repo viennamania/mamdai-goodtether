@@ -201,7 +201,7 @@ export default function FaqPage() {
 
   if (
     session?.user?.email &&
-    session?.user?.email.includes ('@cryptopay.beauty')
+    session?.user?.email.includes ('@orangex.center')
   ) {
     signOut(
       {

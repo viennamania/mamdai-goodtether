@@ -67,7 +67,7 @@ export function useTable<T extends AnyObject>(
     setLoading(true);
 
     
-    if (session?.user?.email.includes('@cryptopay.beauty')) {
+    if (session?.user?.email.includes('@orangex.center')) {
 
       
       const res = await fetch('/api/doingdoit/healthinfo/getAll', {
