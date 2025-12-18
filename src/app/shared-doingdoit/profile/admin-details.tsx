@@ -405,6 +405,7 @@ export default function AdminDetails({
                     />
                   </div>
 
+                  {/*
                   <div className='flex flex-col items-start justify-start gap-2 border rounded-lg p-5'>
                     <div>설문</div>
                     <Checkbox
@@ -416,6 +417,7 @@ export default function AdminDetails({
                       disabled
                     />
 
+
                     <Checkbox
                       label="설문통계"
                       className="mt-3"
@@ -425,6 +427,7 @@ export default function AdminDetails({
                       disabled
                     />
                   </div>
+                  */}
 
                   <div className='flex flex-col items-start justify-start gap-2 border rounded-lg p-5'>
                     <div>운영관리</div>
@@ -436,6 +439,7 @@ export default function AdminDetails({
                       checked = { userData?.access?.access_operation_healthinfo }
                       disabled
                     />
+                    {/*
                     <Checkbox
                       label="유형별가이드"
                       className="mt-3"
@@ -444,6 +448,7 @@ export default function AdminDetails({
                       checked = { userData?.access?.access_operation_guide }
                       disabled
                     />
+                    */}
                     <Checkbox
                       label="공지사항"
                       className="mt-3"
@@ -470,6 +475,7 @@ export default function AdminDetails({
                     />
                   </div>
 
+                  {/*
                   <div className='flex flex-col items-start justify-start gap-2 border rounded-lg p-5'>
                     <div>포인트</div>
                     <Checkbox
@@ -511,8 +517,11 @@ export default function AdminDetails({
                       disabled
                     />
                   </div>
+                  */}
 
                 </div>
+                
+
 
             </div>
 
