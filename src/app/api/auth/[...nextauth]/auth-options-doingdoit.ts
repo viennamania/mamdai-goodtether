@@ -40,7 +40,7 @@ const getUser = async (email: string) => {
 
 export const authOptions: NextAuthOptions = {
 
-  /// debug: true,
+  debug: true,
   pages: {
     ...pagesOptions,
   },
@@ -166,6 +166,22 @@ export const authOptions: NextAuthOptions = {
 
         */
 
+
+        // For testing purposes, create a simple test user if loginId is 'admin'
+        if (userId === 'admin' && credentials?.password === '1234') {
+          const user = {
+            id: '1',
+            name: 'Admin User',
+            email: 'admin@orangex.center',
+            image: '',
+            role: 'admin',
+            roles: ['admin'],
+          };
+          return user;
+        }
+
+
+
         const result = await getUserByLoginId(userId);
 
         console.log("auth-options-doingdoit userId:", userId);
@@ -173,11 +189,10 @@ export const authOptions: NextAuthOptions = {
 
         if (!result) {
           // User not found
-
           console.log("auth-options-doingdoit User not found");
 
-          
 
+          
           return null;
         }
 
