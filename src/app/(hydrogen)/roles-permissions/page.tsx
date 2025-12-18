@@ -1,31 +1,14 @@
-import { usersData } from '@/data/users-data';
-import PageHeader from '@/app/shared/page-header';
-import ModalButton from '@/app/shared/modal-button';
-import RolesGrid from '@/app/shared/roles-permissions/roles-grid';
-import UsersTable from '@/app/shared/roles-permissions/users-table';
-import CreateRole from '@/app/shared/roles-permissions/create-role';
+import nextDynamic from 'next/dynamic';
 
-const pageHeader = {
-  title: 'Roles and Permissions ',
-  breadcrumb: [
-    {
-      href: '/',
-      name: 'Dashboard',
-    },
-    {
-      name: 'Role Management & Permission',
-    },
-  ],
-};
+// Force dynamic rendering for this page
+export const dynamic = 'force-dynamic';
 
-export default function BlankPage() {
-  return (
-    <>
-      <PageHeader title={pageHeader.title} breadcrumb={pageHeader.breadcrumb}>
-        <ModalButton label="Add New Role" view={<CreateRole />} />
-      </PageHeader>
-      <RolesGrid />
-      <UsersTable data={usersData} />
-    </>
-  );
+// Dynamically import the entire page content to avoid SSR issues
+const RolesPermissionsContent = nextDynamic(() => import('./roles-permissions-content'), {
+  ssr: false,
+  loading: () => <div className="flex justify-center items-center min-h-screen">Loading...</div>
+});
+
+export default function RolesPermissionsPage() {
+  return <RolesPermissionsContent />;
 }

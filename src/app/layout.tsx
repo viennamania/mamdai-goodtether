@@ -9,8 +9,9 @@ import { authOptions } from '@/app/api/auth/[...nextauth]/auth-options-doingdoit
 
 import AuthProvider from '@/app/api/auth/[...nextauth]/auth-provider';
 
-// Force dynamic rendering for the entire app
+// Force dynamic rendering for the entire app to avoid SSR issues with browser-only libraries
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 
 import GlobalDrawer from '@/app/shared/drawer-views/container';
@@ -27,13 +28,15 @@ import cn from '@/utils/class-names';
 
 import Head from 'next/head';
 
-import { ThirdwebProvider } from "thirdweb/react";
+// import { ThirdwebProvider } from "thirdweb/react";
 
 
 
 //////import { QueryClient, QueryClientProvider } from 'react-query';
 
-
+const ClientThirdwebProvider = nextDynamic(() => import('@/components/client-thirdweb-provider'), {
+  ssr: false,
+});
 
 const NextProgress = nextDynamic(() => import('@/components/next-progress'), {
   ssr: false,
@@ -139,7 +142,7 @@ export default async function RootLayout({
         <AuthProvider session={session}>
           <ThemeProvider>
 
-            <ThirdwebProvider>
+            <ClientThirdwebProvider>
 
               <NextProgress />
 
@@ -151,7 +154,7 @@ export default async function RootLayout({
               <GlobalDrawer />
               <GlobalModal />
 
-            </ThirdwebProvider>
+            </ClientThirdwebProvider>
             
           </ThemeProvider>
         </AuthProvider>

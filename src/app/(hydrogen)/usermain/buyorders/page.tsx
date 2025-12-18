@@ -18,6 +18,23 @@ import { useState, useEffect, use } from "react";
 
 import { PiMagnifyingGlassBold } from 'react-icons/pi';
 
+// Only import thirdweb if we're on the client side
+let thirdwebModules: any = {};
+if (typeof window !== 'undefined') {
+  // These imports will only happen on the client side
+  thirdwebModules = require('thirdweb');
+  const reactModules = require('thirdweb/react');
+  const walletModules = require('thirdweb/wallets');
+  const chainModules = require('thirdweb/chains');
+  
+  thirdwebModules = {
+    ...thirdwebModules,
+    ...reactModules,
+    ...walletModules,
+    ...chainModules,
+  };
+}
+
 import { useSearchParams } from 'next/navigation';
 
 import DateCell from '@/components/ui/date-cell';
@@ -110,7 +127,6 @@ const wallets = [
 
 
 export default function BuyerOrdersPage() {
-
 
   const { data: session, status } = useSession();
 

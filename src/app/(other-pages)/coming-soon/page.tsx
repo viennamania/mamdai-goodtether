@@ -1,10 +1,19 @@
 import Image from 'next/image';
+import nextDynamic from 'next/dynamic';
 import { Title } from '@/components/ui/text';
-import CountdownTimer from './countdown-timer';
 import SubscriptionForm from '@/app/shared/subscription-form';
 import { PiPlusBold } from 'react-icons/pi';
 import ComingSoonImg from '@public/coming-soon.png';
 import ComingSoonTwoImg from '@public/coming-soon-2.png';
+
+// Force dynamic rendering for this page
+export const dynamic = 'force-dynamic';
+
+// Dynamically import components that might have SSR issues
+const CountdownTimer = nextDynamic(() => import('./countdown-timer'), {
+  ssr: false,
+  loading: () => <div className="text-center">Loading countdown...</div>
+});
 
 export default function ComingSoonPage() {
   return (

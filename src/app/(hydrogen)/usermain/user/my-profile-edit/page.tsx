@@ -1,5 +1,7 @@
 'use client';
 
+// Force dynamic rendering for this page
+export const dynamic = 'force-dynamic';
 
 import type { NextPage } from "next";
 import Top1 from "@/components-figma/top1";

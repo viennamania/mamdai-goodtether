@@ -51,7 +51,7 @@ export default function UploadZone({
       setFiles([
         ...acceptedFiles.map((file) =>
           Object.assign(file, {
-            preview: URL.createObjectURL(file),
+            preview: typeof window !== 'undefined' ? URL.createObjectURL(file) : '',
           })
         ),
       ]);

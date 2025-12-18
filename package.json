@@ -7,7 +7,8 @@
   "scripts": {
     "clean": "rimraf -g \"{node_modules,.next,.cache}\"",
     "dev": "next dev",
-    "build": "next build",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' next build",
+    "build:debug": "NODE_OPTIONS='--max-old-space-size=8192 --inspect' next build",
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",

@@ -1,11 +1,20 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import nextDynamic from 'next/dynamic';
 import { Title } from '@/components/ui/text';
 import { Button } from '@/components/ui/button';
 import { PiHouseLineBold } from 'react-icons/pi';
-import SocialItems from '@/components/ui/social-shares';
 import { siteConfig } from '@/config/site.config';
 import NotFoundImg from '@public/not-found.png';
+
+// Force this page to be dynamic
+export const dynamic = 'force-dynamic';
+
+// Dynamically import components that might cause SSR issues
+const SocialItems = nextDynamic(() => import('@/components/ui/social-shares'), {
+  ssr: false,
+  loading: () => null
+});
 
 export default function NotFound() {
   return (
