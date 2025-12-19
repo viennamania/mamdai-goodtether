@@ -188,11 +188,21 @@ export async function getUserByEmail(email: string): Promise<UserProps | null> {
   const collection = client.db('doingdoit').collection('users');
   const results = await collection.findOne<UserProps>(
     { email: email },
-    { projection: { _id: 0, emailVerified: 0 } }
+    //{ projection: { _id: 0, emailVerified: 0 } }
     ////{ projection: { _id: 0, emailVerified: 0 } }
+    { projection: {
+      id: 1,
+      email: 1,
+      name: 1,
+      nickname: 1,
+      avatar: 1,
+      regType: 1,
+      mobile: 1,
+      roles: 1,
+    } }
   );
 
-  ////console.log('getUserByEmail results: ' + results);
+  console.log('getUserByEmail results: ' + results);
 
   if (!results) {
     return null;

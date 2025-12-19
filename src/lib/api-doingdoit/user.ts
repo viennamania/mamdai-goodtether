@@ -3380,22 +3380,10 @@ export async function getStatisticsDailyVisit(
   if (!endDate) endDate = '2030-12-31';
 
 
-  
+  /*
   const connection = await connect();
 
   try {
-
-    /*
-    const query = `
-    SELECT 
-    DATE_FORMAT(createdAt, '%Y-%m-%d') AS day,
-    COUNT(*) AS 가입자수
-    FROM users
-    WHERE createdAt >= ? AND createdAt < ?
-    GROUP BY DATE_FORMAT(createdAt, '%Y-%m-%d')
-    ORDER BY DATE_FORMAT(createdAt, '%Y-%m-%d') ASC
-    `;
-    */
 
     // user_visit_history
 
@@ -3431,6 +3419,43 @@ export async function getStatisticsDailyVisit(
     console.error('getStatisticsDaily error: ', error);
     return [];
   }
+  */
+
+  const client = await clientPromise;
+  const collection = client.db('doingdoit').collection('user_visit_history');
+
+  const pipeline = [
+    {
+      $match: {
+        createdAt: {
+          $gte: new Date(startDate),
+          $lte: new Date(endDate),
+        },
+      },
+    },
+    {
+      $group: {
+        _id: {
+          $dateToString: { format: '%Y-%m-%d', date: '$createdAt' },
+        },
+        count: { $sum: 1 },
+      },
+    },
+    {
+      $sort: { '_id': 1 },
+    },
+    {
+      $project: {
+        day: '$_id',
+        count: 1,
+        _id: 0,
+      },
+    },
+  ];
+
+  const results = await collection.aggregate(pipeline).toArray();
+
+  return results; 
 
 }
 
@@ -3452,6 +3477,8 @@ export async function getStatisticsSummary(
   // get total user count
   // get today user count
 
+
+  /*
   const connection = await connect();
 
   try {
@@ -3545,6 +3572,51 @@ export async function getStatisticsSummary(
       todayWithdrawUserCount: 0,
     };
   }
+  */
+
+  const client = await clientPromise;
+  const collection = client.db('doingdoit').collection('users');
+  
+  const totalUserCount = await collection.countDocuments({
+    roles: 'user',
+    nickname: { $ne: null },
+    status: 'active',
+  });
+  
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  
+  const tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  
+  const todayUserCount = await collection.countDocuments({
+    roles: 'user',
+    nickname: { $ne: null },
+    status: 'active',
+    createdAt: {
+      $gte: today,
+      $lt: tomorrow,
+    },
+  });
+  
+  const totalWithdrawUserCount = await collection.countDocuments({
+    status: 'withdraw',
+  });
+  
+  const todayWithdrawUserCount = await collection.countDocuments({
+    status: 'withdraw',
+    withdrawAt: {
+      $gte: today,
+      $lt: tomorrow,
+    },
+  });
+  
+  return {
+    totalUserCount,
+    todayUserCount,
+    totalWithdrawUserCount,
+    todayWithdrawUserCount,
+  };
 
 }
 

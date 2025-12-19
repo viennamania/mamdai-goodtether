@@ -163,7 +163,7 @@ export default function ProfileMenu({
 
   const { data: session } = useSession(); // pre-fetch session data
 
-  ///console.log('ProfileMenu session', session);
+  console.log('ProfileMenu session', session);
 
   const [userData, setUserData] = useState(
     {
@@ -172,7 +172,7 @@ export default function ProfileMenu({
       nickname: '',
       avatar: '',
       // role is array of string
-      role: [],
+      roles: [],
     }
   );
 
@@ -205,7 +205,7 @@ export default function ProfileMenu({
 
     {/* if userData don't have nickname, show nothing */}
 
-    { !userData?.nickname ? (
+    { !session?.user?.email ? (
 
       <>
             <div className='flex flex-row gap-3  ' >
@@ -234,8 +234,7 @@ export default function ProfileMenu({
 
       <div className='flex flex-row gap-2 items-center justify-center'>
 
-        { session ? (
-          
+ 
 
             <button
               //className={cn(
@@ -261,19 +260,7 @@ export default function ProfileMenu({
 
             </button>
          
-          
-        ) : (
 
-          <>
-            <div className='flex flex-row gap-3  ' >
-              <Link href={routes.signIn}>
-                로그인
-              </Link>
-            </div>
-
-          </>
-          
-        ) }
 
       </div>
 
