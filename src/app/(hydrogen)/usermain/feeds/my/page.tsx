@@ -22,7 +22,7 @@ export default function MyFeedPage() {
     <div className="bg-dark sticky top-0 z-50 ">
 
         <Top1
-          logo="/usermain/images/logo-orangex.webp"
+          logo="/usermain/images/logo-orangex.png"
           topBackgroundColor="#fff"
           topBorderBottom="1px solid #ddd"
           topBoxSizing="border-box"

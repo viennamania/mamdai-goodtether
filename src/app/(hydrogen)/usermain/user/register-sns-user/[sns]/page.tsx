@@ -579,7 +579,7 @@ export default function Register({ params }: any) {
             <div className="self-stretch flex flex-col items-center justify-start">
             
             <Top1
-              logo="/usermain/images/logo-orangex.webp"
+              logo="/usermain/images/logo-orangex.png"
               topBackgroundColor="#fff"
               topBorderBottom="1px solid #ddd"
               topBoxSizing="border-box"

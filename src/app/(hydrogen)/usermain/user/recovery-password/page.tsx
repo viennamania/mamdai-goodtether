@@ -219,7 +219,7 @@ const Frame12: NextPage = () => {
           <div className="relative bg-white w-full overflow-hidden flex flex-col items-center justify-start text-center text-13xl text-dark font-menu-off">
             <div className="self-stretch flex flex-col items-center justify-start">
               <Top1
-                logo="/usermain/images/logo-orangex.webp"
+                logo="/usermain/images/logo-orangex.png"
                 topBackgroundColor="#fff"
                 topBorderBottom="1px solid #ddd"
                 topBoxSizing="border-box"

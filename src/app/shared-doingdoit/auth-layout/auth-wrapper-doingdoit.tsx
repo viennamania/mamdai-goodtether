@@ -37,7 +37,7 @@ export default function AuthWrapperDoingDoit({
         <div className=' mb-10 flex justify-center items-center'>
           <Image
             className=" object-contain"
-            src="/logo-orangex.webp"
+            src="/logo-orangex.png"
             alt="Logo"
             width={400}
             height={200}

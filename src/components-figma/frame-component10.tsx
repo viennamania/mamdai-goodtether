@@ -12,7 +12,7 @@ const FrameComponent10: NextPage = () => {
 
       <Top1
         id="100000"
-        logo="/usermain/images/logo-orangex.webp"
+        logo="/usermain/images/logo-orangex.png"
         topBackgroundColor="unset"
         topBorderBottom="unset"
         topBoxSizing="unset"
