@@ -871,11 +871,10 @@ export default function ProfileEditPage() {
                       )}
 
 
-
+                      {/*
                       { !address && (
                         <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
 
-                          {/* 설명: 지갑을 연결하고 프로필을 완성하세요. */}
                           <div className="self-stretch relative font-extrabold">
                             <span>지갑을 연결하고 프로필을 완성하세요.</span>
                             <span className="text-red">*</span>
@@ -921,6 +920,7 @@ export default function ProfileEditPage() {
                         </div>
 
                       )}
+                      */}
 
 
                         {/* user wallet address */}
@@ -973,6 +973,7 @@ export default function ProfileEditPage() {
                           */}
 
                         {/* stabilityId */}
+                        {/*
                         <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>상점 ID</span>
@@ -994,7 +995,6 @@ export default function ProfileEditPage() {
                           />
                         </div>
 
-                        {/* storecode */}
                         <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>상점코드</span>
@@ -1011,6 +1011,7 @@ export default function ProfileEditPage() {
                             }
                           />
                         </div>
+                        */}
 
                         {/* sellerAccountName */}
                         <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
