@@ -80,7 +80,7 @@ const FrameComponentHome: NextPage = () => {
       
     
       <div className="
-      hidden
+      flex
        flex-col items-center justify-start  py-[30px]  xl:py-[100px] gap-[40px]  xl:gap-[60px]">
         
 
