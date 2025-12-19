@@ -41,6 +41,7 @@ export default function AuthWrapperDoingDoit({
           alt="Logo"
           width={400}
           height={200}
+          style={{ width: 'auto', height: 'auto' }}
         />
       </div>
       

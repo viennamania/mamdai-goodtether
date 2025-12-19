@@ -215,6 +215,7 @@ export default function HeliumSidebar({ className }: { className?: string }) {
               // className="dark:invert"
               width={250}
               height={100}
+              style={{ width: 'auto', height: 'auto' }}
               priority
             />
           </Link>

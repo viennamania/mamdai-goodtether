@@ -330,12 +330,7 @@ export default function SignInForm() {
             </div>
             */}
 
-            <Button
-
-              className="w-full" type="submit" size="lg" color="info"
-
-    
-            >
+            <Button className="w-full" type="submit" size="lg" color="info">
               <span>로그인</span>{' '}
               <PiArrowRightBold className="ms-2 mt-0.5 h-5 w-5" />
             </Button>
