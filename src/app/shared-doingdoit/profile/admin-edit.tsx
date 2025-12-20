@@ -1165,6 +1165,7 @@ export default function AdminEdit({
 
                   <div className='flex flex-col items-start justify-start gap-2 border rounded-lg p-5'>
                     <div>설정</div>
+                    {/*
                     <Controller
                       control={control}
                       name="access_setup_food"
@@ -1190,6 +1191,7 @@ export default function AdminEdit({
 
                       )}
                     />
+                    */}
                     
                     <Controller
                       control={control}
