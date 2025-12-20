@@ -28,7 +28,7 @@ export const GET = async (req: NextRequest, res: NextResponse) => {
     _id as number,
   );
   
-  ////console.log("getUser results:", results);
+  console.log("getUser results:", results);
 
 
 

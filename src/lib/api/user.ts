@@ -144,7 +144,6 @@ export async function getUser(id: number): Promise<UserProps | null> {
   const collection = client.db('doingdoit').collection('users');
   const results = await collection.findOne<UserProps>(
     { id },
-    { projection: { _id: 0, emailVerified: 0 } }
     ////{ projection: { _id: 0, emailVerified: 0 } }
   );
   if (results) {
