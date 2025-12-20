@@ -718,7 +718,7 @@ export default function BoardPage() {
         <img
           className="relative w-20 h-20"
           alt=""
-          src="/usermain/images/loading.svg"
+          src="/usermain/images/loading.gif"
         />
       </div>
       <div className="relative">로딩 중...</div>

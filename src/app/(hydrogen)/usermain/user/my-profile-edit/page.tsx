@@ -1014,6 +1014,7 @@ export default function ProfileEditPage() {
                         */}
 
                         {/* sellerAccountName */}
+                        {/*
                         <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>판매자 예금주명</span>
@@ -1031,8 +1032,10 @@ export default function ProfileEditPage() {
                             }
                           />             
                         </div>
+                        */}
 
                         {/* sellerBankName */}
+                        {/*
                         <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>판매자 은행명</span>
@@ -1050,9 +1053,10 @@ export default function ProfileEditPage() {
                             }
                           />             
                         </div>
-
+                        */}
 
                         {/* sellerAccountNumber */}
+                        {/*
                         <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>판매자 계좌번호</span>
@@ -1070,8 +1074,10 @@ export default function ProfileEditPage() {
                             }
                           />             
                         </div>
+                        */}
 
                         {/* sellerWalletAddress */}
+                        {/*
                         <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>판매자 지갑 주소</span>
@@ -1089,6 +1095,7 @@ export default function ProfileEditPage() {
                             }
                           />             
                         </div>
+                        */}
                         
                         
                         {/* nickname */}
