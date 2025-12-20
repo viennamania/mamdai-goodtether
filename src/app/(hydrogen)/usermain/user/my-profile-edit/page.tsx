@@ -1162,7 +1162,7 @@ export default function ProfileEditPage() {
 
 
 
-
+                        {/*
                         <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>생년월일</span>
@@ -1246,32 +1246,11 @@ export default function ProfileEditPage() {
                             <span>성별</span>
                             <span className="text-red">*</span>
                           </div>
-                          
-
-                          {/* 성별 선택 (여성, 남성) */  }
-                                                   {/* selected={userGender}
-
-                              if userGender is '여성' then selected={userGender} */}
-
-         
 
                           <RadioGroup
 
                               value={userGender}
                               //setValue={setValue}
-          
-
-                              /*
-                              setValue={(value) => {
-                                //setValue(value);
-                                ///console.log('value', value);
-
-                                setUserGender(value);
-
-
-
-                              } }
-                              */
 
                               setValue={(value) => {
                                 //setValue(value);
@@ -1337,24 +1316,12 @@ export default function ProfileEditPage() {
                         </div>
 
 
-                        <div className="hidden self-stretch flex-col items-start justify-center gap-[8px]">
+                        <div className="flex self-stretch flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>몸무게</span>
                             <span className="text-red">*</span>
                           </div>
                           <div className="self-stretch flex flex-row items-center justify-start gap-[8px]">
-                            {/*
-                            <InputBox
-                              prop="0"
-                              inputBoxWidth="unset"
-                              inputBoxAlignSelf="unset"
-                              //inputBoxFlexShrink="unset"
-                              //inputBoxFlex="1"
-                              //divColor="#999"
-                              //divTextAlign="right"
-                            />
-                            */}
-
                             <Input
                               type="text"
                               size="lg"
@@ -1365,32 +1332,17 @@ export default function ProfileEditPage() {
                               value={userWeight}
                               onChange={(e) => setUserWeight(parseInt(e.target.value))}
                             />
-
-
-
-
                             <div className="relative">kg</div>
                           </div>
                         </div>
 
 
-                        <div className="hidden self-stretch flex-col items-start justify-center gap-[8px]">
+                        <div className="flex self-stretch flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>키</span>
                             <span className="text-red">*</span>
                           </div>
                           <div className="self-stretch flex flex-row items-center justify-start gap-[8px]">
-                            {/*
-                            <InputBox
-                              prop="0"
-                              inputBoxWidth="unset"
-                              inputBoxAlignSelf="unset"
-                              //inputBoxFlexShrink="unset"
-                              //inputBoxFlex="1"
-                              //divColor="#999"
-                              ///divTextAlign="right"
-                            />
-                            */}
                             <Input
                               type="text"
                               size="lg"
@@ -1406,10 +1358,7 @@ export default function ProfileEditPage() {
                           </div>
                         </div>
 
-
-
-
-                        <div className="hidden self-stretch flex-col items-start justify-center gap-[8px]">
+                        <div className="flex self-stretch flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>식단기록목적</span>
                             <span className="text-red">*</span>
@@ -1527,20 +1476,7 @@ export default function ProfileEditPage() {
           
                         </div>
 
-
-
-
-
-
-
-
-                            {/*
-                        <ContainerNoPrescriptionOrDisea medicalHistoryQuestion="현재 질병이 있거나 증상 개선을 위해 처방을 받아 복용중인 약이 있나요?" />
-                        */}
-
-                        {/* 질병 선택 */  }
-                      
-                        <div className="hidden self-stretch flex-col items-start justify-center gap-[8px]">
+                        <div className="flex self-stretch flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>현재 질병이 있거나 증상 개선을 위해 처방을 받아 복용중인 약이 있나요?</span>
                             <span className="text-red">*</span>
@@ -1583,21 +1519,12 @@ export default function ProfileEditPage() {
 
                         </div>
                         
-                        
-                        {/*
-                        <ContainerNoPrescriptionOrDisea medicalHistoryQuestion="부모, 형제, 자매 중 다음의 질환을 앓았거나 해당 질환으로 사망한 경우가 있나요?(뇌졸중, 심근경색, 고혈압, 당뇨병, 암)" />
-                        */}
-
-                        {/* 가족 질병 선택 */  }
-
-                        
-                        <div className="hidden self-stretch flex-col items-start justify-center gap-[8px]">
+                        <div className="flex self-stretch flex-col items-start justify-center gap-[8px]">
                           <div className="self-stretch relative font-extrabold">
                             <span>부모, 형제, 자매 중 다음의 질환을 앓았거나 해당 질환으로 사망한 경우가 있나요?(뇌졸중, 심근경색, 고혈압, 당뇨병, 암)</span>
                             <span className="text-red">*</span>
                           </div>
-                        
-                         
+                          
                           <RadioGroup
                               value={userFamilyMedicalHistory}
                               //setValue={setValue}
@@ -1632,6 +1559,7 @@ export default function ProfileEditPage() {
                             </div>
                           </RadioGroup>
                         </div>
+                        */}
                         
 
 
