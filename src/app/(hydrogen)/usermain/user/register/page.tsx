@@ -1412,9 +1412,8 @@ export default function Register() {
 
 
                     <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
-
-                      {/* 상점 ID */}
-                      {/* stabilityId */}
+                      
+                      {/*
                       <div className="self-stretch relative font-extrabold">
                         <span>상점 ID</span>
                         <span className="text-red">*</span>
@@ -1442,6 +1441,7 @@ export default function Register() {
                           />
                         )}
                       />
+                      */}
 
 
                       {/* 휴대폰 */}
