@@ -6,7 +6,7 @@ import { data } from '@/data/doingdoit/faq/data';
 import { getColumns } from '@/app/shared-doingdoit/faq/columns';
 
 import FaqTableWidget from '@/components/doingdoit/faq-table-widget';
-
+import CSSErrorBoundary from '@/components/css-error-boundary';
 
 import TableLayout from './table-layout';
 import { metaObject } from '@/config/site.config';
@@ -64,35 +64,33 @@ export default function SearchTablePage() {
   }
 
   return (
-
-    <TableLayout
-      title={pageHeader.title}
-      breadcrumb={pageHeader.breadcrumb}
-      //data={memberData}
-      fileName=""
-      
-      //header="Order ID,Name,Email,Avatar,Items,Price,Status,Created At,Updated At"
-    >
-
-
-
-      <FaqTableWidget
-        title=""
-        variant="minimal"
-        data={data}
-        // @ts-ignore
-        getColumns={getColumns}
-        enablePagination={true}
+    <CSSErrorBoundary>
+      <TableLayout
+        title={pageHeader.title}
+        breadcrumb={pageHeader.breadcrumb}
+        //data={memberData}
+        fileName=""
         
-        searchPlaceholder="질문"
+        //header="Order ID,Name,Email,Avatar,Items,Price,Status,Created At,Updated At"
+      >
 
-        sticky
-        scroll={{ x: 600, }}
+        <FaqTableWidget
+          title=""
+          variant="minimal"
+          data={data}
+          // @ts-ignore
+          getColumns={getColumns}
+          enablePagination={true}
+          
+          searchPlaceholder="질문"
 
-        className="min-h-[480px] [&_.widget-card-header]:items-center [&_.widget-card-header_h5]:font-medium"
-      />
+          sticky
+          scroll={{ x: 600, }}
 
-    </TableLayout>
+          className="min-h-[480px] [&_.widget-card-header]:items-center [&_.widget-card-header_h5]:font-medium"
+        />
 
+      </TableLayout>
+    </CSSErrorBoundary>
   );
 }

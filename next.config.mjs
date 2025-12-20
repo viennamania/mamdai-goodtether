@@ -144,10 +144,17 @@ const nextConfig = {
         minSize: 20000,
         minRemainingSize: 0,
         minChunks: 1,
-        maxAsyncRequests: 30,
-        maxInitialRequests: 30,
+        maxAsyncRequests: 20, // Reduced from 30
+        maxInitialRequests: 20, // Reduced from 30
         enforceSizeThreshold: 50000,
         cacheGroups: {
+          styles: {
+            name: 'styles',
+            type: 'css/mini-extract',
+            chunks: 'all',
+            enforce: true,
+            priority: 30,
+          },
           default: {
             minChunks: 2,
             priority: -20,

@@ -147,7 +147,7 @@ export async function getAll({
     const res =  await collection
     .aggregate<BoardProps>([
 
-      {$match: {isTop: 'Y'}},
+      //{$match: {isTop: 'Y'}},
 
       // match by q and feedTitle and feedContent and hiddenYn is exist  and not 'Y'
       {
@@ -178,61 +178,61 @@ export async function getAll({
   } else {
 
 
-  const res =  await collection
-    .aggregate<BoardProps>([
+    const res =  await collection
+      .aggregate<BoardProps>([
 
 
 
-      // if category ia 'all', then match isTop is 'Y'
+        // if category ia 'all', then match isTop is 'Y'
 
 
 
- 
-      {
-        $match: {
+  
+        {
+          $match: {
 
-          category: category === null ? { $exists: true } : category,
+            category: category === null ? { $exists: true } : category,
 
-          ///category: category === null ? { $exists: true } : category,
+            ///category: category === null ? { $exists: true } : category,
 
-          //isTop: category === 'all' ? 'Y' : { $exists: true },
+            //isTop: category === 'all' ? 'Y' : { $exists: true },
 
-        }
-      },
-
-      // match by q and feedTitle and feedContent and hiddenYn is exist  and not 'Y'
-      {
-        $match: {
-          $or: [
-            { title: { $regex: query, $options: 'i' } },
-
-
-            // tags array match
-            { tags: { $elemMatch: { $regex: query, $options: 'i' } } },
-
-          ],
-
-        }
-      },
-
-
-      {
-        $sort: {
-            [sort]: order === 'asc' ? 1 : -1,
+          }
         },
-      },
+
+        // match by q and feedTitle and feedContent and hiddenYn is exist  and not 'Y'
+        {
+          $match: {
+            $or: [
+              { title: { $regex: query, $options: 'i' } },
 
 
-      {
-          $skip: (page - 1) * limit,
-      },
-      
-      {
-          $limit: limit,
-      },
-      
-    ])
-    .toArray();
+              // tags array match
+              { tags: { $elemMatch: { $regex: query, $options: 'i' } } },
+
+            ],
+
+          }
+        },
+
+
+        {
+          $sort: {
+              [sort]: order === 'asc' ? 1 : -1,
+          },
+        },
+
+
+        {
+            $skip: (page - 1) * limit,
+        },
+        
+        {
+            $limit: limit,
+        },
+        
+      ])
+      .toArray();
 
 
     return {
