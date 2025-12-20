@@ -3373,6 +3373,7 @@ export default function FeedDetailOnePage({ params }: any) {
               </div>
             </button>
 
+            {/*
             <button
               ///className=" no-underline flex-1 box-border h-14 flex flex-row items-center justify-start text-black border-b-[2px] border-solid border-dark"
               ///className=" no-underline flex-1 box-border h-14 flex flex-row items-center justify-start text-grey-9 border-b-[2px] border-solid border-grey-d"
@@ -3384,6 +3385,7 @@ export default function FeedDetailOnePage({ params }: any) {
             >
               <div className="flex-1 relative font-extrabold">My 코인</div>
             </button>
+            */}
 
 
           </div>
