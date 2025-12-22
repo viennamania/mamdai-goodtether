@@ -3326,7 +3326,7 @@ export async function getStatisticsDaily(
   if (!endDate) endDate = '2030-12-31';
 
 
-  
+  /*
   const connection = await connect();
 
   try {
@@ -3360,6 +3360,43 @@ export async function getStatisticsDaily(
     console.error('getStatisticsDaily error: ', error);
     return [];
   }
+  */
+
+  const client = await clientPromise;
+  const collection = client.db('doingdoit').collection('users');
+
+  const pipeline = [
+    {
+      $match: {
+        createdAt: {
+          $gte: new Date(startDate),
+          $lte: new Date(endDate),
+        },
+      },
+    },
+    {
+      $group: {
+        _id: {
+          $dateToString: { format: '%Y-%m-%d', date: '$createdAt' },
+        },
+        count: { $sum: 1 },
+      },
+    },
+    {
+      $sort: { '_id': 1 },
+    },
+    {
+      $project: {
+        day: '$_id',
+        count: 1,
+        _id: 0,
+      },
+    },
+  ];
+
+  const results = await collection.aggregate(pipeline).toArray();
+
+  return results;
 
 }
 
