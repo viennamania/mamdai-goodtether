@@ -37,7 +37,7 @@ const pageHeader = {
   title: '게시글 관리',
   breadcrumb: [
     {
-      href: "/",
+      href: "/dashboard",
       name: 'Home',
     },
     {

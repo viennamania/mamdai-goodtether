@@ -29,7 +29,7 @@ const pageHeader = {
   title: 'FAQ',
   breadcrumb: [
     {
-      href: "/",
+      href: "/dashboard",
       name: 'Home',
     },
     {

@@ -34,7 +34,7 @@ const pageHeader = {
   title: '유형별가이드',
   breadcrumb: [
     {
-      href: "/",
+      href: "/dashboard",
       name: 'Home',
     },
     {

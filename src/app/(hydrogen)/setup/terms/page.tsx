@@ -29,7 +29,7 @@ const pageHeader = {
   title: '약관',
   breadcrumb: [
     {
-      href: "/",
+      href: "/dashboard",
       name: 'Home',
     },
     {

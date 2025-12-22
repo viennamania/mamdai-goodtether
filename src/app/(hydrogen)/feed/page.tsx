@@ -41,7 +41,7 @@ const pageHeader = {
   title: '구매주문관리',
   breadcrumb: [
     {
-      href: "/",
+      href: "/dashboard",
       name: 'Home',
     },
     {

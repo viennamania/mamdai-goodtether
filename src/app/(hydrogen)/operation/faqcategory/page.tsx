@@ -43,7 +43,7 @@ const pageHeader = {
   title: 'FAQ분류관리',
   breadcrumb: [
     {
-      href: "/",
+      href: "/dashboard",
       name: 'Home',
     },
     {

@@ -31,7 +31,7 @@ const pageHeader = {
   title: '탈퇴회원',
   breadcrumb: [
     {
-      href: "/",
+      href: "/dashboard",
       name: 'Home',
     },
     {
