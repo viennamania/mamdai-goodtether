@@ -471,7 +471,7 @@ export default function SurveyResultPage({ params }: any) {
    
 
 
-        <div className="self-stretch xl:bg-background flex flex-col items-center justify-start xl:py-10 px-0">
+        <div className="self-stretch xl:bg-gray-50 flex flex-col items-center justify-start xl:py-10 px-0">
           <div className=" w-96 xl:w-[1000px] flex flex-col items-center justify-start">
 
             <div className="self-stretch bg-white flex flex-col items-center justify-end  p-5 xl:p-10 gap-[40px]">

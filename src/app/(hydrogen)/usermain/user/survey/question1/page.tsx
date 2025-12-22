@@ -59,7 +59,7 @@ const Frame2: NextPage = () => {
 
  
         
-        <div className="self-stretch xl:bg-background flex flex-col items-center justify-start xl:py-10 px-0">
+        <div className="self-stretch xl:bg-gray-50 flex flex-col items-center justify-start xl:py-10 px-0">
 
 
 

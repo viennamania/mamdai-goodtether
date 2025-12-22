@@ -492,7 +492,7 @@ export default function FeedPage({ params }: any) {
       self-stretch flex flex-col items-center justify-start">
 
         <div className=" 
-        self-stretch xl:bg-background flex flex-col items-center justify-start xl:py-10 ">
+        self-stretch xl:bg-gray-50 flex flex-col items-center justify-start xl:py-10 ">
 
 
           <div className="w-full  xl:w-[1000px] flex flex-col items-center justify-start">

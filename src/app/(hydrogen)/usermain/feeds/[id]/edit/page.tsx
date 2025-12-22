@@ -740,7 +740,7 @@ export default function FeedDetailOnePage({
 
       <div className="self-stretch flex flex-col items-center justify-start">
        
-        <div className="self-stretch xl:bg-background flex flex-col items-center justify-start xl:py-10 px-0">
+        <div className="self-stretch xl:bg-gray-50 flex flex-col items-center justify-start xl:py-10 px-0">
 
           {/*
           <div className="  xl:w-[1000px] flex flex-col items-center justify-start">

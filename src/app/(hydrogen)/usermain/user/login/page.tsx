@@ -601,7 +601,7 @@ export default function Page() {
                 frameDivBoxSizing3="unset"
               />
               
-              <div className="self-stretch   xl:bg-background flex flex-col items-center justify-start py-10 px-0">
+              <div className="self-stretch   xl:bg-gray-50 flex flex-col items-center justify-start py-10 px-0">
    
                 <div className=" xl:w-[1000px] flex flex-col items-center justify-start p-5  ">
 

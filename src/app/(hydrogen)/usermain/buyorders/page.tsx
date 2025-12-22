@@ -326,7 +326,7 @@ export default function BuyerOrdersPage() {
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-center justify-start">
       <div className="self-stretch flex flex-col items-center justify-start">
   
-      <div className="self-stretch xl:bg-background flex flex-col items-center justify-start py-5 xl:py-10  text-center text-base text-grey-9 font-menu-off">
+      <div className="self-stretch xl:bg-gray-50 flex flex-col items-center justify-start py-5 xl:py-10  text-center text-base text-grey-9 font-menu-off">
       
       <div className="w-full xl:w-[1000px] flex flex-col items-center justify-start gap-[20px] xl:gap-[40px]">
 

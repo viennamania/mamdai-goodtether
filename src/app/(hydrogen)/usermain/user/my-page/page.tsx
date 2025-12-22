@@ -259,7 +259,7 @@ export default function ProfileEditPage() {
           frameDivBoxSizing3="unset"
         />
 
-        <div className="self-stretch xl:bg-background flex flex-col items-center justify-start xl:py-10">
+        <div className="self-stretch xl:bg-gray-50 flex flex-col items-center justify-start xl:py-10">
 
 
       {/* loading animaiton */}

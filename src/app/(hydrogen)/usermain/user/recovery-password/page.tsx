@@ -242,7 +242,7 @@ const Frame12: NextPage = () => {
                 frameDivBoxSizing3="unset"
               />
 
-              <div className="self-stretch xl:bg-background flex flex-col items-center justify-start xl:py-10">
+              <div className="self-stretch xl:bg-gray-50 flex flex-col items-center justify-start xl:py-10">
                 <div className="w-[1000px] flex flex-col items-center justify-start">
                   <div className="self-stretch bg-white flex flex-col items-center justify-end p-[100px] gap-[40px]">
                     

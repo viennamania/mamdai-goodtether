@@ -609,7 +609,7 @@ export default function FeedDetailTwoPage({
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-center justify-start text-left text-xs text-dark font-menu-off">
       <div className="self-stretch flex flex-col items-center justify-start">
        
-        <div className="self-stretch xl:bg-background flex flex-col items-center justify-start py-10 px-0">
+        <div className="self-stretch xl:bg-gray-50 flex flex-col items-center justify-start py-10 px-0">
           <div className=" w-full pl-5 pr-5
           xl:w-[1000px] xl:pl-0 xl:pr-0   flex flex-col items-center justify-start">
 
