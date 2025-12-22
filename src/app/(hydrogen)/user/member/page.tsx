@@ -65,9 +65,15 @@ export default function SearchTablePage() {
     return <></>
   }
 
+  /*
   if (status !== 'loading' && !session) {
     window.location.href = '/signin';
     return <></>
+  }
+  */
+
+  if (status === 'loading') {
+    return <div>Loading...</div>;
   }
     
 

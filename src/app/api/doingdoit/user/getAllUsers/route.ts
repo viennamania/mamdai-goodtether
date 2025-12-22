@@ -27,6 +27,8 @@ import { getAllUsers } from '@/lib/api/user';
 
 export const POST = async (req: NextRequest, res: NextResponse) => {
 
+  console.log('API Route /api/doingdoit/user/getAllUsers called');
+
   
   const data = await req.json();
 

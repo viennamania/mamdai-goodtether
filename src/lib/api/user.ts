@@ -3067,9 +3067,11 @@ export async function getAllManagers( {
       $match: {
 
         // if nickname is not exist, then exclude it
+        /*
         nickname: {
           $exists: true
         },
+        */
 
         roles: {
           $ne: 'user'
@@ -3115,14 +3117,17 @@ export async function getAllManagers( {
     
   ])
   .toArray();
+
   const resultsCount = await collection.aggregate([
     {
       $match: {
 
         // if nickname is not exist, then exclude it
+        /*
         nickname: {
           $exists: true
         },
+        */
 
         roles: {
           $ne: 'user'
