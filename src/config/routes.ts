@@ -225,8 +225,12 @@ export const routes = {
     details: (id: string) => `/point/${id}`,
     edit: (id: string) => `/point/${id}/edit`,
   },
+
+
   setup: {
-    index: '/setup/db',
+    //index: '/setup/db',
+    index: '/setup/terms',
+
     db: '/setup/db',
     food: '/setup/food',
     foodImport: '/setup/food/import',

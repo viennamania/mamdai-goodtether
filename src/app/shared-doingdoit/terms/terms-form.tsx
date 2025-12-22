@@ -183,9 +183,16 @@ export default function TermsForm() {
 
   //const [contractContent, setContractContent] = useState<string>('');
   const [contractContentTerms, setContractContentTerms] = useState<string>('');
+  const [contractContentTermsEng, setContractContentTermsEng] = useState<string>('');
+  
   const [contractContentPrivacy, setContractContentPrivacy] = useState<string>('');
+  const [contractContentPrivacyEng, setContractContentPrivacyEng] = useState<string>('');
+
   const [contractContentMarketing, setContractContentMarketing] = useState<string>('');
+  const [contractContentMarketingEng, setContractContentMarketingEng] = useState<string>('');
+
   const [contractContentWithdrawal, setContractContentWithdrawal] = useState<string>('');
+  const [contractContentWithdrawalEng, setContractContentWithdrawalEng] = useState<string>('');
 
 
   // get contract from DB
