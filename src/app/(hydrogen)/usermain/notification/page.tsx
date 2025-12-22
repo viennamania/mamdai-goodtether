@@ -138,7 +138,7 @@ export default function NotificationPage() {
 
     <>
 
-    <div className=" bg-dark felx sticky top-0 z-50 ">
+    <div className=" bg-dark flex sticky top-0 z-50 ">
               <Top1
                 logo="/usermain/images/logo-orangex.png"
                 topBackgroundColor="#fff"
