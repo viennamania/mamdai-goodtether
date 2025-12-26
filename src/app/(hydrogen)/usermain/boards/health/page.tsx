@@ -226,7 +226,7 @@ export default function HealthInfoPage() {
 
     <>
 
-          <div className="w-full flex flex-col items-center justify-center bg-gray-50 sticky top-0 z-50 ">
+          <div className="w-full flex flex-col items-center justify-center bg-white sticky top-0 z-50 ">
               <Top1
                 logo="/usermain/images/logo-orangex.png"
                 topBackgroundColor="#fff"
@@ -251,6 +251,54 @@ export default function HealthInfoPage() {
           </div>
 
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-center justify-start text-center text-base text-grey-9 font-menu-off">
+      
+      {/* left from top to bottom */}
+      {/* fixed left top to bottom */}
+      {/* ad banner space */}
+      {/* image is /usermain/images/ad-banner.gif, ad-banner2.gif, ad-banner3.gif */}
+      {/* each image has out link url */}
+      <div className="hidden xl:flex  fixed left-0 top-20 bottom-0 flex-col items-center justify-start gap-5 pt-5 pb-5 pl-5 z-40 ">
+
+        <a
+          href="https://www.orangex.center"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="w-52 h-auto relative overflow-hidden shrink-0"
+            alt=""
+            src="/usermain/images/ad-banner.gif"
+          />
+        </a>
+
+        <a
+          href="https://www.orangex.center"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="w-52 h-auto relative overflow-hidden shrink-0"
+            alt=""
+            src="/usermain/images/ad-banner2.gif"
+          />
+        </a>
+
+        <a
+          href="https://www.orangex.center"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="w-52 h-auto relative overflow-hidden shrink-0"
+            alt=""
+            src="/usermain/images/ad-banner3.gif"
+          />
+        </a>
+
+      </div>
+      
+      
+      
       <div className="self-stretch flex flex-col items-center justify-start">
  
         <div className="self-stretch bg-background flex flex-col items-center justify-start py-5 xl:py-10">

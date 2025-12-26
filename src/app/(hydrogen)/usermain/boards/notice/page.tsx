@@ -163,34 +163,81 @@ export default function NoticePage() {
 
     <>
 
-    <div className="w-full flex flex-col items-center justify-center bg-gray-50 sticky top-0 z-50 ">
-                  <Top1
-                    logo="/usermain/images/logo-orangex.png"
-                    topBackgroundColor="#fff"
-                    topBorderBottom="1px solid #ddd"
-                    topBoxSizing="border-box"
-                    frameDivBorderBottom="unset"
-                    frameDivBoxSizing="unset"
-                    divColor="#212121"
-                    frameDivBorderBottom1="unset"
-                    frameDivBoxSizing1="unset"
-                    divColor1="#212121"
-                    frameDivBorderBottom2="2px solid #212121"
-                    frameDivBoxSizing2="border-box"
-                    divColor2="#212121"
-                    divColor3="#212121"
-                    aboutColor="#212121"
-                    frameDivBorder="1px solid #666"
-                    divColor4="#212121"
-                    frameDivBorder1="1px solid #666"
-                    divColor5="#212121"
-                  />
-          </div>
+    <div className="w-full flex flex-col items-center justify-center bg-white sticky top-0 z-50 ">
+      <Top1
+        logo="/usermain/images/logo-orangex.png"
+        topBackgroundColor="#fff"
+        topBorderBottom="1px solid #ddd"
+        topBoxSizing="border-box"
+        frameDivBorderBottom="unset"
+        frameDivBoxSizing="unset"
+        divColor="#212121"
+        frameDivBorderBottom1="unset"
+        frameDivBoxSizing1="unset"
+        divColor1="#212121"
+        frameDivBorderBottom2="2px solid #212121"
+        frameDivBoxSizing2="border-box"
+        divColor2="#212121"
+        divColor3="#212121"
+        aboutColor="#212121"
+        frameDivBorder="1px solid #666"
+        divColor4="#212121"
+        frameDivBorder1="1px solid #666"
+        divColor5="#212121"
+      />
+    </div>
 
 
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-center justify-start">
       <div className="self-stretch flex flex-col items-center justify-start">
-  
+
+
+      {/* left from top to bottom */}
+      {/* fixed left top to bottom */}
+      {/* ad banner space */}
+      {/* image is /usermain/images/ad-banner.gif, ad-banner2.gif, ad-banner3.gif */}
+      {/* each image has out link url */}
+      <div className="hidden xl:flex  fixed left-0 top-20 bottom-0 flex-col items-center justify-start gap-5 pt-5 pb-5 pl-5 z-40 ">
+
+        <a
+          href="https://www.orangex.center"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="w-52 h-auto relative overflow-hidden shrink-0"
+            alt=""
+            src="/usermain/images/ad-banner.gif"
+          />
+        </a>
+
+        <a
+          href="https://www.orangex.center"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="w-52 h-auto relative overflow-hidden shrink-0"
+            alt=""
+            src="/usermain/images/ad-banner2.gif"
+          />
+        </a>
+
+        <a
+          href="https://www.orangex.center"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="w-52 h-auto relative overflow-hidden shrink-0"
+            alt=""
+            src="/usermain/images/ad-banner3.gif"
+          />
+        </a>
+
+      </div>
+
+
       <div className="self-stretch bg-background flex flex-col items-center justify-start py-5 xl:py-10 px-0 text-center text-base text-grey-9 font-menu-off">
       
       <div className="w-full xl:w-[1000px] flex flex-col items-center justify-start gap-[5px] xl:gap-[40px]">

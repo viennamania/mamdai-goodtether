@@ -221,358 +221,407 @@ export default function GuidePage() {
 
     <>
 
-          <div className="w-full flex flex-col items-center justify-center bg-gray-50 sticky top-0 z-50 ">
-              <Top1
-                logo="/usermain/images/logo-orangex.png"
-                topBackgroundColor="#fff"
-                topBorderBottom="1px solid #ddd"
-                topBoxSizing="border-box"
-                frameDivBorderBottom="unset"
-                frameDivBoxSizing="unset"
-                divColor="#212121"
-                frameDivBorderBottom1="unset"
-                frameDivBoxSizing1="unset"
-                divColor1="#212121"
-                frameDivBorderBottom2="2px solid #212121"
-                frameDivBoxSizing2="border-box"
-                divColor2="#212121"
-                divColor3="#212121"
-                aboutColor="#212121"
-                frameDivBorder="1px solid #666"
-                divColor4="#212121"
-                frameDivBorder1="1px solid #666"
-                divColor5="#212121"
-              />
-          </div>
+      <div className="w-full flex flex-col items-center justify-center bg-white sticky top-0 z-50 ">
+          <Top1
+            logo="/usermain/images/logo-orangex.png"
+            topBackgroundColor="#fff"
+            topBorderBottom="1px solid #ddd"
+            topBoxSizing="border-box"
+            frameDivBorderBottom="unset"
+            frameDivBoxSizing="unset"
+            divColor="#212121"
+            frameDivBorderBottom1="unset"
+            frameDivBoxSizing1="unset"
+            divColor1="#212121"
+            frameDivBorderBottom2="2px solid #212121"
+            frameDivBoxSizing2="border-box"
+            divColor2="#212121"
+            divColor3="#212121"
+            aboutColor="#212121"
+            frameDivBorder="1px solid #666"
+            divColor4="#212121"
+            frameDivBorder1="1px solid #666"
+            divColor5="#212121"
+          />
+      </div>
 
-          <div className="relative bg-white w-full overflow-hidden flex flex-col items-center justify-start text-center text-base text-grey-9 font-menu-off">
-      <div className="self-stretch flex flex-col items-center justify-start">
- 
-        <div className="self-stretch bg-background flex flex-col items-center justify-start py-5 xl:py-10">
+      <div className="relative bg-white w-full overflow-hidden flex flex-col items-center justify-start text-center text-base text-grey-9 font-menu-off">
+        
+          
+        {/* left from top to bottom */}
+        {/* fixed left top to bottom */}
+        {/* ad banner space */}
+        {/* image is /usermain/images/ad-banner.gif, ad-banner2.gif, ad-banner3.gif */}
+        {/* each image has out link url */}
+        <div className="hidden xl:flex  fixed left-0 top-20 bottom-0 flex-col items-center justify-start gap-5 pt-5 pb-5 pl-5 z-40 ">
 
-          <div className="w-full xl:w-[1000px] flex flex-col items-center justify-start gap-[5px] xl:gap-[40px]">
-            
-            <div className="xl:hidden w-full self-stretch flex text-left text-dark text-xl font-extrabold pl-5 pr-5">
-              게시판
-            </div>
-            
-            
-            <table className="pl-5 pr-5 w-full xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <Link
-                href="/usermain/boards"
-                className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center  border-b-[2px] border-solid border-orange-light">
-                <div className=" relative font-extrabold text-sm xl:text-base">
-                    <p className="xl:hidden  leading-tight ">자유<br></br>게시판</p>
-                    <p className="hidden xl:block">자유게시판</p>
-                </div>
-              </Link>
-              </tr>
+          <a
+            href="https://www.orangex.center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="w-52 h-auto relative overflow-hidden shrink-0"
+              alt=""
+              src="/usermain/images/ad-banner.gif"
+            />
+          </a>
 
-              <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <Link
-                href="/usermain/boards/health"
-                className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center  border-b-[2px] border-solid border-orange-light">
-                <div className=" relative font-extrabold text-sm xl:text-base">
-                
-                  <p className="xl:hidden  leading-tight ">테더<br></br>정보</p>
-                  <p className="hidden xl:block">테더정보</p>
-                  
-                </div>
-              </Link>
-              </tr>
+          <a
+            href="https://www.orangex.center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="w-52 h-auto relative overflow-hidden shrink-0"
+              alt=""
+              src="/usermain/images/ad-banner2.gif"
+            />
+          </a>
 
-              <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <Link
-                href="/usermain/boards/guide"
-                className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center text-dark border-b-[2px] border-solid border-dark">
-                <div className=" relative font-extrabold text-[14px] xl:text-base">
+          <a
+            href="https://www.orangex.center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="w-52 h-auto relative overflow-hidden shrink-0"
+              alt=""
+              src="/usermain/images/ad-banner3.gif"
+            />
+          </a>
 
-                  <p className="xl:hidden  leading-tight ">거래<br></br>가이드</p>
-                  <p className="hidden xl:block">거래가이드</p>
+        </div>
+        
+        
+        
+        <div className="self-stretch flex flex-col items-center justify-start">
+  
+          <div className="self-stretch bg-background flex flex-col items-center justify-start py-5 xl:py-10">
 
-                </div>
-              </Link>
-              </tr>
-
-              <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <Link
-                href="/usermain/boards/notice"
-              className=" w-full no-underline  box-border h-14 flex flex-row items-center justify-center border-b-[2px] border-solid border-orange-light">
-                <div className=" relative font-extrabold text-[14px] xl:text-base ">
-
-                  <p className="xl:hidden  leading-tight ">공지<br></br>사항</p>
-                  <p className="hidden xl:block">공지사항</p>
-
-                </div>
-              </Link>
-              </tr>
-
-
-              <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <Link
-                href="/usermain/boards/faq"
-                className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center border-b-[2px] border-solid border-orange-light">
-                <div className=" relative font-extrabold text-[14px] xl:text-base">
-                  
-                  <p>FAQ</p>
-
-                </div>
-              </Link>
-              </tr>
-
-            </table>
-            
-
-
-            {/*
-            <Tabs
-              value={value}
-              onChange={handleChange}
-              aria-label="simple tabs example"
-              variant="scrollable"
-              scrollButtons="auto"
-              allowScrollButtonsMobile
-              //lassName="self-stretch w-full"
-              className="w-full"
-            >
-             
-              <Tab
-                label={
-                  <div className="text-sm xl:text-base">자유게시판</div>
-                } {...a11yProps(0)}
-              />
-              <Tab label={
-                <div className="text-sm xl:text-base">테더정보</div>
-              } {...a11yProps(1)} />
-              <Tab label={
-                <div className="text-sm xl:text-base">유형별 가이드</div>
-              } {...a11yProps(2)} />
-              <Tab label={
-                <div className="text-sm xl:text-base">공지사항</div>
-              } {...a11yProps(3)} />
-              <Tab label={
-                <div className="text-sm xl:text-base">FAQ</div>
-              } {...a11yProps(4)} />
-            </Tabs>
-
-            */}
-
-
-
-            <div className=" self-stretch flex flex-col items-center justify-center gap-[0px] xl:gap-[20px] text-left text-sm text-dark">
+            <div className="w-full xl:w-[1000px] flex flex-col items-center justify-start gap-[5px] xl:gap-[40px]">
               
-              
-              <div className=" self-stretch flex flex-col-reverse xl:flex-row gap-2 items-center justify-between  p-5 ">
-                
-                <div className="w-full flex flex-row items-center justify-start gap-[12px]">
-                
-
-                  { sortBy === "viewCount" ? (
-                    <>
-                      <button
-                        className={`relative text-grey-9 `}
-                        onClick={() => {
-                          setSortBy("createdAt");
-
-                          
-
-                          //search(searchTerm, "createdAt");
-                        } }
-                      >
-                        최근순
-                      </button>
-                      <div className="relative bg-grey-c w-px h-3" />
-                      <div
-                        className={`relative font-extrabold `}
-                      >
-                        인기순
-                      </div>
-                    </>
-                    
-
-                  ) : (
-                    
-                    <>
-                      <div
-                        className={`relative font-extrabold `}
-                      >
-                        최근순
-                      </div>
-                      <div className="relative bg-grey-c w-px h-3" />
-                      <button
-                        className={`relative text-grey-9 `}
-                        onClick={() => {
-                          setSortBy("viewCount");
-                          
-                          //search(searchTerm, "viewCount");
-                        } }
-                      >
-                        인기순
-                      </button>
-                    </>
-
-                  )}
-
-                </div>
-
-                {/*
-                <Search prop="제목, 태그 입력" searchWidth="400px" />
-                */}
-                <Input
-                  type="search"
-                  //placeholder={searchPlaceholder}
-                  placeholder="제목, 태그 입력"
-                  value={searchTerm}
-                
-                  onClear={() =>
-                    handleSearch('')
-                  }
-                  onChange={(event) => 
-                    handleSearch(event.target.value)
-                  }
-                  clearable
-                  prefix={<PiMagnifyingGlassBold className="h-4 w-4" />}
-                  labelClassName='text-base font-medium'
-
-                  className=" w-full xl:w-[400px] rounded-[8px] border-[1px] border-solid border-grey-e outline-none bg-white"
-                />
-
+              <div className="xl:hidden w-full self-stretch flex text-left text-dark text-xl font-extrabold pl-5 pr-5">
+                게시판
               </div>
+              
+              
+              <table className="pl-5 pr-5 w-full xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <Link
+                  href="/usermain/boards"
+                  className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center  border-b-[2px] border-solid border-orange-light">
+                  <div className=" relative font-extrabold text-sm xl:text-base">
+                      <p className="xl:hidden  leading-tight ">자유<br></br>게시판</p>
+                      <p className="hidden xl:block">자유게시판</p>
+                  </div>
+                </Link>
+                </tr>
 
-
-
-              <div className="min-h-screen pl-5 pr-5  self-stretch flex flex-col items-center justify-start gap-[10px] xl:gap-[20px]">
-
-       
-
-                { false ? (
-
-                  <div className=" h-60 self-stretch flex flex-col items-center justify-center gap-[20px] z-[1] text-left text-dark">
-                      
-                      <div className="self-stretch flex flex-row items-center justify-center gap-[20px] z-[1] text-left text-dark">
+                <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <Link
+                  href="/usermain/boards/health"
+                  className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center  border-b-[2px] border-solid border-orange-light">
+                  <div className=" relative font-extrabold text-sm xl:text-base">
                   
-                        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-grey-6" />
+                    <p className="xl:hidden  leading-tight ">테더<br></br>정보</p>
+                    <p className="hidden xl:block">테더정보</p>
+                    
+                  </div>
+                </Link>
+                </tr>
+
+                <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <Link
+                  href="/usermain/boards/guide"
+                  className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center text-dark border-b-[2px] border-solid border-dark">
+                  <div className=" relative font-extrabold text-[14px] xl:text-base">
+
+                    <p className="xl:hidden  leading-tight ">거래<br></br>가이드</p>
+                    <p className="hidden xl:block">거래가이드</p>
+
+                  </div>
+                </Link>
+                </tr>
+
+                <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <Link
+                  href="/usermain/boards/notice"
+                className=" w-full no-underline  box-border h-14 flex flex-row items-center justify-center border-b-[2px] border-solid border-orange-light">
+                  <div className=" relative font-extrabold text-[14px] xl:text-base ">
+
+                    <p className="xl:hidden  leading-tight ">공지<br></br>사항</p>
+                    <p className="hidden xl:block">공지사항</p>
+
+                  </div>
+                </Link>
+                </tr>
+
+
+                <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <Link
+                  href="/usermain/boards/faq"
+                  className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center border-b-[2px] border-solid border-orange-light">
+                  <div className=" relative font-extrabold text-[14px] xl:text-base">
+                    
+                    <p>FAQ</p>
+
+                  </div>
+                </Link>
+                </tr>
+
+              </table>
+              
+
+
+              {/*
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                aria-label="simple tabs example"
+                variant="scrollable"
+                scrollButtons="auto"
+                allowScrollButtonsMobile
+                //lassName="self-stretch w-full"
+                className="w-full"
+              >
+              
+                <Tab
+                  label={
+                    <div className="text-sm xl:text-base">자유게시판</div>
+                  } {...a11yProps(0)}
+                />
+                <Tab label={
+                  <div className="text-sm xl:text-base">테더정보</div>
+                } {...a11yProps(1)} />
+                <Tab label={
+                  <div className="text-sm xl:text-base">유형별 가이드</div>
+                } {...a11yProps(2)} />
+                <Tab label={
+                  <div className="text-sm xl:text-base">공지사항</div>
+                } {...a11yProps(3)} />
+                <Tab label={
+                  <div className="text-sm xl:text-base">FAQ</div>
+                } {...a11yProps(4)} />
+              </Tabs>
+
+              */}
+
+
+
+              <div className=" self-stretch flex flex-col items-center justify-center gap-[0px] xl:gap-[20px] text-left text-sm text-dark">
+                
+                
+                <div className=" self-stretch flex flex-col-reverse xl:flex-row gap-2 items-center justify-between  p-5 ">
                   
-                      </div>
-                    </div>
+                  <div className="w-full flex flex-row items-center justify-start gap-[12px]">
                   
-                  ) : (
 
-                    <>
+                    { sortBy === "viewCount" ? (
+                      <>
+                        <button
+                          className={`relative text-grey-9 `}
+                          onClick={() => {
+                            setSortBy("createdAt");
 
+                            
 
-                    {
-                      loading === false && searchResults?.length === 0 ? (
-                        <div className="w-full h-60 self-stretch flex flex-col items-center justify-center gap-[20px] z-[1] text-left text-dark">
-                            <div className="text-base">검색 결과가 없습니다.</div>
+                            //search(searchTerm, "createdAt");
+                          } }
+                        >
+                          최근순
+                        </button>
+                        <div className="relative bg-grey-c w-px h-3" />
+                        <div
+                          className={`relative font-extrabold `}
+                        >
+                          인기순
                         </div>
+                      </>
+                      
+
+                    ) : (
+                      
+                      <>
+                        <div
+                          className={`relative font-extrabold `}
+                        >
+                          최근순
+                        </div>
+                        <div className="relative bg-grey-c w-px h-3" />
+                        <button
+                          className={`relative text-grey-9 `}
+                          onClick={() => {
+                            setSortBy("viewCount");
+                            
+                            //search(searchTerm, "viewCount");
+                          } }
+                        >
+                          인기순
+                        </button>
+                      </>
+
+                    )}
+
+                  </div>
+
+                  {/*
+                  <Search prop="제목, 태그 입력" searchWidth="400px" />
+                  */}
+                  <Input
+                    type="search"
+                    //placeholder={searchPlaceholder}
+                    placeholder="제목, 태그 입력"
+                    value={searchTerm}
+                  
+                    onClear={() =>
+                      handleSearch('')
+                    }
+                    onChange={(event) => 
+                      handleSearch(event.target.value)
+                    }
+                    clearable
+                    prefix={<PiMagnifyingGlassBold className="h-4 w-4" />}
+                    labelClassName='text-base font-medium'
+
+                    className=" w-full xl:w-[400px] rounded-[8px] border-[1px] border-solid border-grey-e outline-none bg-white"
+                  />
+
+                </div>
+
+
+
+                <div className="min-h-screen pl-5 pr-5  self-stretch flex flex-col items-center justify-start gap-[10px] xl:gap-[20px]">
+
+        
+
+                  { false ? (
+
+                    <div className=" h-60 self-stretch flex flex-col items-center justify-center gap-[20px] z-[1] text-left text-dark">
                         
-                      ) : (
+                        <div className="self-stretch flex flex-row items-center justify-center gap-[20px] z-[1] text-left text-dark">
+                    
+                          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-grey-6" />
+                    
+                        </div>
+                      </div>
+                    
+                    ) : (
+
+                      <>
+
+
+                      {
+                        loading === false && searchResults?.length === 0 ? (
+                          <div className="w-full h-60 self-stretch flex flex-col items-center justify-center gap-[20px] z-[1] text-left text-dark">
+                              <div className="text-base">검색 결과가 없습니다.</div>
+                          </div>
+                          
+                        ) : (
 
 
 
-                      <div className=" self-stretch grid grid-cols-1 xl:grid-cols-2 items-start justify-center gap-[20px] text-left text-dark">
-                        
-                        {
-                          searchResults?.map((item: any) => (
-                            <Link
-                              key = {item?.id}
-                              
-                              href={
-                                routes.usermain.boardGuideDetails(item?.id)
-                              }
-
-                              className="no-underline  "
-                            >
-
-                              <div className="  bg-white shadow-[4px_4px_20px_rgba(140,_144,_171,_0.1)] flex flex-col items-center justify-end text-left text-xs text-grey-6 font-menu-off border-[1px] border-solid border-grey-e">
-                                  
+                        <div className=" self-stretch grid grid-cols-1 xl:grid-cols-2 items-start justify-center gap-[20px] text-left text-dark">
+                          
+                          {
+                            searchResults?.map((item: any) => (
+                              <Link
+                                key = {item?.id}
                                 
-                                  <Image
-                                    ///className="self-stretch relative max-w-full overflow-hidden h-[490px] shrink-0 object-cover"
-                                    alt="image"
+                                href={
+                                  routes.usermain.boardGuideDetails(item?.id)
+                                }
+
+                                className="no-underline  "
+                              >
+
+                                <div className="  bg-white shadow-[4px_4px_20px_rgba(140,_144,_171,_0.1)] flex flex-col items-center justify-end text-left text-xs text-grey-6 font-menu-off border-[1px] border-solid border-grey-e">
                                     
-                                    src={
-                                      //item?.images && item?.images?.[0] && item?.images?.[0] !== undefined ? item?.images?.[0] : "logo.svg"
-
-                                      item?.images && item?.images?.[0] ? item?.images?.[0] : "/logo.svg"
-                                    }
-
-                                    // rectangle aspect ratio 1:1
-
-                                    ///objectFit="cover" with layout="fill
-
-                                    //objectFit="cover"
-                                    //layout="fill"
-                                      
-
-                                    width={490}
-                                    height={490}
-                                  />
                                   
-
-                                  <div className="  self-stretch flex flex-col items-center justify-end p-6 gap-[20px]">
-
-                                    <div className="self-stretch flex flex-col items-center justify-end gap-[4px]">
-
-                                      <div className=" break-words leading-normal self-stretch relative text-xl font-extrabold text-dark">
-
-
-                                        {item?.title}
-                                        
+                                    <Image
+                                      ///className="self-stretch relative max-w-full overflow-hidden h-[490px] shrink-0 object-cover"
+                                      alt="image"
                                       
+                                      src={
+                                        //item?.images && item?.images?.[0] && item?.images?.[0] !== undefined ? item?.images?.[0] : "logo.svg"
+
+                                        item?.images && item?.images?.[0] ? item?.images?.[0] : "/logo.svg"
+                                      }
+
+                                      // rectangle aspect ratio 1:1
+
+                                      ///objectFit="cover" with layout="fill
+
+                                      //objectFit="cover"
+                                      //layout="fill"
+                                        
+
+                                      width={490}
+                                      height={490}
+                                    />
+                                    
+
+                                    <div className="  self-stretch flex flex-col items-center justify-end p-6 gap-[20px]">
+
+                                      <div className="self-stretch flex flex-col items-center justify-end gap-[4px]">
+
+                                        <div className=" break-words leading-normal self-stretch relative text-xl font-extrabold text-dark">
+
+
+                                          {item?.title}
+                                          
+                                        
+
+                                        </div>
+
+                                      </div>
+
+                                      <div className=" h-8  self-stretch flex flex-row items-center justify-start gap-[4px]">
+
+                                        {item?.tags?.map((tag: any) => (
+                                          <div
+                                            key={tag}
+                                            className="flex items-center rounded-full border border-gray-300 py-1 pe-2.5 ps-3 text-sm font-medium text-gray-700"
+                                          >
+                                              {tag}
+                                          </div>
+                                        ))}
 
                                       </div>
 
                                     </div>
-
-                                    <div className=" h-8  self-stretch flex flex-row items-center justify-start gap-[4px]">
-
-                                      {item?.tags?.map((tag: any) => (
-                                        <div
-                                          key={tag}
-                                          className="flex items-center rounded-full border border-gray-300 py-1 pe-2.5 ps-3 text-sm font-medium text-gray-700"
-                                        >
-                                            {tag}
-                                        </div>
-                                      ))}
-
-                                    </div>
-
                                   </div>
-                                </div>
 
-                            </Link>
-                          ))
-                        
-                        }
+                              </Link>
+                            ))
+                          
+                          }
 
-                      </div>
+                        </div>
 
-                    )}
-                    </>
+                      )}
+                      </>
 
-                  )
-                }
+                    )
+                  }
 
-                    
+                      
 
-           
+            
 
-                
+                  
+                </div>
               </div>
             </div>
+
+
           </div>
-
-
         </div>
-      </div>
-      <Footer
-        footerAlignSelf="stretch"
-        footerBorderTop="1px solid #eee"
-        footerBoxSizing="border-box"
-      />
+        <Footer
+          footerAlignSelf="stretch"
+          footerBorderTop="1px solid #eee"
+          footerBoxSizing="border-box"
+        />
     </div>
 
 

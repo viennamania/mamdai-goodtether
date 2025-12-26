@@ -218,7 +218,7 @@ export default function FaqPage() {
 
     <>
 
-    <div className="w-full flex flex-col items-center justify-center bg-gray-50 sticky top-0 z-50 ">
+    <div className="w-full flex flex-col items-center justify-center bg-white sticky top-0 z-50 ">
             <Top1
               logo="/usermain/images/logo-orangex.png"
               topBackgroundColor="#fff"
@@ -248,441 +248,488 @@ export default function FaqPage() {
 
 
 
-      <div className="self-stretch bg-background flex flex-col items-center justify-start py-5 xl:py-10 px-0 text-center text-base text-grey-9 font-menu-off">
-     
-      <div className="w-full  xl:w-[1000px] flex flex-col items-center justify-start gap-[5px] xl:gap-[40px]">
-        
-        <div className="xl:hidden w-full self-stretch flex text-left text-dark text-xl font-extrabold pl-5 pr-5">
-          게시판
+        {/* left from top to bottom */}
+        {/* fixed left top to bottom */}
+        {/* ad banner space */}
+        {/* image is /usermain/images/ad-banner.gif, ad-banner2.gif, ad-banner3.gif */}
+        {/* each image has out link url */}
+        <div className="hidden xl:flex  fixed left-0 top-20 bottom-0 flex-col items-center justify-start gap-5 pt-5 pb-5 pl-5 z-40 ">
+
+          <a
+            href="https://www.orangex.center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="w-52 h-auto relative overflow-hidden shrink-0"
+              alt=""
+              src="/usermain/images/ad-banner.gif"
+            />
+          </a>
+
+          <a
+            href="https://www.orangex.center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="w-52 h-auto relative overflow-hidden shrink-0"
+              alt=""
+              src="/usermain/images/ad-banner2.gif"
+            />
+          </a>
+
+          <a
+            href="https://www.orangex.center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="w-52 h-auto relative overflow-hidden shrink-0"
+              alt=""
+              src="/usermain/images/ad-banner3.gif"
+            />
+          </a>
+
         </div>
 
 
-        
-        <table className="pl-5 pr-5 w-full xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <Link
-                href="/usermain/boards"
-                className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center border-b-[2px] border-solid border-orange-light">
-                <div className=" relative font-extrabold text-sm xl:text-base">
-                    <p className="xl:hidden  leading-tight ">자유<br></br>게시판</p>
-                    <p className="hidden xl:block">자유게시판</p>
-                </div>
-              </Link>
-              </tr>
 
-              <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <Link
-                href="/usermain/boards/health"
-                className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center  border-b-[2px] border-solid border-orange-light">
-                <div className=" relative font-extrabold text-sm xl:text-base">
-                
-                  <p className="xl:hidden  leading-tight ">테더<br></br>정보</p>
-                  <p className="hidden xl:block">테더정보</p>
-                  
-                </div>
-              </Link>
-              </tr>
-
-              <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <Link
-                href="/usermain/boards/guide"
-                className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center  border-b-[2px] border-solid border-orange-light">
-                <div className=" relative font-extrabold text-[14px] xl:text-base">
-
-                  <p className="xl:hidden  leading-tight ">거래<br></br>가이드</p>
-                  <p className="hidden xl:block">거래가이드</p>
-
-                </div>
-              </Link>
-              </tr>
-
-              <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <Link
-                href="/usermain/boards/notice"
-              className=" w-full no-underline  box-border h-14 flex flex-row items-center justify-center border-b-[2px] border-solid border-orange-light">
-                <div className=" relative font-extrabold text-[14px] xl:text-base ">
-
-                  <p className="xl:hidden  leading-tight ">공지<br></br>사항</p>
-                  <p className="hidden xl:block">공지사항</p>
-
-                </div>
-              </Link>
-              </tr>
-
-
-              <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
-              <Link
-                href="/usermain/boards/faq"
-                className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center text-dark border-b-[2px] border-solid border-dark">
-                <div className=" relative font-extrabold text-[14px] xl:text-base">
-                  
-                  <p>FAQ</p>
-
-                </div>
-              </Link>
-              </tr>
-
-        </table>
-        
-
-
-        {/* tabs */}
-          {/*  horizontally scrollable tabs */}
-          {/*
-          <Tabs
-              value={value}
-              onChange={handleChange}
-              aria-label="simple tabs example"
-              variant="scrollable"
-              scrollButtons="auto"
-              allowScrollButtonsMobile
-              //className="self-stretch w-full"
-              className="w-full"
-            >
-             
-              <Tab
-                label={
-                  <div className="text-sm xl:text-base">자유게시판</div>
-                } {...a11yProps(0)}
-              />
-              <Tab label={
-                <div className="text-sm xl:text-base">테더정보</div>
-              } {...a11yProps(1)} />
-              <Tab label={
-                <div className="text-sm xl:text-base">유형별 가이드</div>
-              } {...a11yProps(2)} />
-              <Tab label={
-                <div className="text-sm xl:text-base">공지사항</div>
-              } {...a11yProps(3)} />
-              <Tab label={
-                <div className="text-sm xl:text-base">FAQ</div>
-              } {...a11yProps(4)} />
-            </Tabs>
-            */}
-
-
-        <div className="min-h-screen mt-5 w-full self-stretch bg-white flex flex-col items-center justify-start text-left text-xl text-dark">
+        <div className="self-stretch bg-background flex flex-col items-center justify-start py-5 xl:py-10 px-0 text-center text-base text-grey-9 font-menu-off">
+      
+        <div className="w-full  xl:w-[1000px] flex flex-col items-center justify-start gap-[5px] xl:gap-[40px]">
           
-          <div className="self-stretch flex flex-col items-start justify-center p-2 gap-[5px] text-sm text-grey-9 border-b-[1px] border-solid border-grey-e">
-            
-            <div className="p-5 flex flex-wrap items-center justify-start gap-[8px] ">
-            
-              {/*
-              type TabType = {
-                faqTitle?: string;
-
-
-                propBackgroundColor?: CSSProperties["backgroundColor"];
-                propColor?: CSSProperties["color"];
-              };
-              */}
-
-              {/* list of category */}
-              <button
-                onClick={() => {
-                  
-                  //setSelectedCategory("자주하는 질문");
-                  setIsTop('Y');
-                  setSelectedCategory("");
-
-                }}
-                //className="rounded-81xl bg-grey-f1 flex flex-row items-center justify-center py-3 px-8 text-left text-sm text-grey-9 font-menu-off"
-              >
-                {/*
-              <Tab
-                faqTitle="자주하는 질문"
-                //propBackgroundColor="#f1f1f1"
-                //propColor="#999"
-                propBackgroundColor={selectedCategory === "자주하는 질문" ? "#fff" : "#f1f1f1"}
-                propColor={selectedCategory === "자주하는 질문" ? "#999" : "#212121"}
-              />
-              */}
-
-
-                {/* seleted or not  button */}
-                {/* when selected bg is dark, text is light */}
-              
-                <div
-                  
-                  className="rounded-81xl bg-grey-f1 flex flex-row items-center justify-center py-3 px-5 text-left text-sm text-grey-9 font-menu-off"
-                  
-                  /*
-                  style={{
-                    backgroundColor: selectedCategory === "all" ? "#f1f1f1" : "#fff",
-                    color: selectedCategory === "all" ? "#212121" : "#999",
-                  }}
-                  */
-                 /* when selected bg is dark, text is light */
-                 
-                  style={{
-                    backgroundColor: isTop === "Y" ? "#000" : "#f1f1f1",
-                    color: isTop === "Y" ? "#fff" : "#999",
-                  }}
-                  
-
-                >
-                  자주하는 질문
-                </div>
-
-
-              </button>
-
-              {
-                categoryData.map((item: any, index: number) => (
-                  <button
-                    key = {index}
-                    onClick={() => {
-                      setIsTop('N');
-                      setSelectedCategory(item?.name);
-                    }}
-                    //className="rounded-81xl bg-grey-f1 flex flex-row items-center justify-center py-3 px-8 text-left text-sm text-grey-9 font-menu-off"
-                  >
-                  <div className="rounded-81xl bg-grey-f1 flex flex-row items-center justify-center py-3 px-5 text-left text-sm text-grey-9 font-menu-off"
-                  style={{
-                    backgroundColor: selectedCategory === item?.name ? "#000" : "#f1f1f1",
-                    color: selectedCategory === item?.name ? "#fff" : "#999",
-                  }}
-                  >
-                    {item?.name}
-                  </div>
-                  </button>
-                ))
-              }
-
-
-            </div>
-
+          <div className="xl:hidden w-full self-stretch flex text-left text-dark text-xl font-extrabold pl-5 pr-5">
+            게시판
           </div>
 
 
+          
+          <table className="pl-5 pr-5 w-full xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <Link
+                  href="/usermain/boards"
+                  className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center border-b-[2px] border-solid border-orange-light">
+                  <div className=" relative font-extrabold text-sm xl:text-base">
+                      <p className="xl:hidden  leading-tight ">자유<br></br>게시판</p>
+                      <p className="hidden xl:block">자유게시판</p>
+                  </div>
+                </Link>
+                </tr>
 
-          { data?.length > 0 && data?.map((item: any, index: number) => (
+                <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <Link
+                  href="/usermain/boards/health"
+                  className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center  border-b-[2px] border-solid border-orange-light">
+                  <div className=" relative font-extrabold text-sm xl:text-base">
+                  
+                    <p className="xl:hidden  leading-tight ">테더<br></br>정보</p>
+                    <p className="hidden xl:block">테더정보</p>
+                    
+                  </div>
+                </Link>
+                </tr>
+
+                <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <Link
+                  href="/usermain/boards/guide"
+                  className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center  border-b-[2px] border-solid border-orange-light">
+                  <div className=" relative font-extrabold text-[14px] xl:text-base">
+
+                    <p className="xl:hidden  leading-tight ">거래<br></br>가이드</p>
+                    <p className="hidden xl:block">거래가이드</p>
+
+                  </div>
+                </Link>
+                </tr>
+
+                <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <Link
+                  href="/usermain/boards/notice"
+                className=" w-full no-underline  box-border h-14 flex flex-row items-center justify-center border-b-[2px] border-solid border-orange-light">
+                  <div className=" relative font-extrabold text-[14px] xl:text-base ">
+
+                    <p className="xl:hidden  leading-tight ">공지<br></br>사항</p>
+                    <p className="hidden xl:block">공지사항</p>
+
+                  </div>
+                </Link>
+                </tr>
 
 
-            
-            <div key={index} className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
+                <tr className="flex-auto xl:w-[1000px] self-stretch flex flex-row items-center justify-center">
+                <Link
+                  href="/usermain/boards/faq"
+                  className=" w-full no-underline box-border h-14 flex flex-row items-center justify-center text-dark border-b-[2px] border-solid border-dark">
+                  <div className=" relative font-extrabold text-[14px] xl:text-base">
+                    
+                    <p>FAQ</p>
+
+                  </div>
+                </Link>
+                </tr>
+
+          </table>
+          
+
+
+          {/* tabs */}
+            {/*  horizontally scrollable tabs */}
+            {/*
+            <Tabs
+                value={value}
+                onChange={handleChange}
+                aria-label="simple tabs example"
+                variant="scrollable"
+                scrollButtons="auto"
+                allowScrollButtonsMobile
+                //className="self-stretch w-full"
+                className="w-full"
+              >
               
-              <div className="self-stretch flex flex-row items-center justify-between gap-2">
+                <Tab
+                  label={
+                    <div className="text-sm xl:text-base">자유게시판</div>
+                  } {...a11yProps(0)}
+                />
+                <Tab label={
+                  <div className="text-sm xl:text-base">테더정보</div>
+                } {...a11yProps(1)} />
+                <Tab label={
+                  <div className="text-sm xl:text-base">유형별 가이드</div>
+                } {...a11yProps(2)} />
+                <Tab label={
+                  <div className="text-sm xl:text-base">공지사항</div>
+                } {...a11yProps(3)} />
+                <Tab label={
+                  <div className="text-sm xl:text-base">FAQ</div>
+                } {...a11yProps(4)} />
+              </Tabs>
+              */}
 
-                <div className="relative font-extrabold  text-sm xl:text-lg  ">
 
-                  {
-                    isTop === 'Y' && ('['+item?.category+'] ')
-                  }
-                      
-                  {item?.title}
-                </div>
+          <div className="min-h-screen mt-5 w-full self-stretch bg-white flex flex-col items-center justify-start text-left text-xl text-dark">
+            
+            <div className="self-stretch flex flex-col items-start justify-center p-2 gap-[5px] text-sm text-grey-9 border-b-[1px] border-solid border-grey-e">
+              
+              <div className="p-5 flex flex-wrap items-center justify-start gap-[8px] ">
+              
+                {/*
+                type TabType = {
+                  faqTitle?: string;
 
-                {isOpenAarray[index] ? (
+
+                  propBackgroundColor?: CSSProperties["backgroundColor"];
+                  propColor?: CSSProperties["color"];
+                };
+                */}
+
+                {/* list of category */}
+                <button
+                  onClick={() => {
+                    
+                    //setSelectedCategory("자주하는 질문");
+                    setIsTop('Y');
+                    setSelectedCategory("");
+
+                  }}
+                  //className="rounded-81xl bg-grey-f1 flex flex-row items-center justify-center py-3 px-8 text-left text-sm text-grey-9 font-menu-off"
+                >
+                  {/*
+                <Tab
+                  faqTitle="자주하는 질문"
+                  //propBackgroundColor="#f1f1f1"
+                  //propColor="#999"
+                  propBackgroundColor={selectedCategory === "자주하는 질문" ? "#fff" : "#f1f1f1"}
+                  propColor={selectedCategory === "자주하는 질문" ? "#999" : "#212121"}
+                />
+                */}
+
+
+                  {/* seleted or not  button */}
+                  {/* when selected bg is dark, text is light */}
+                
+                  <div
+                    
+                    className="rounded-81xl bg-grey-f1 flex flex-row items-center justify-center py-3 px-5 text-left text-sm text-grey-9 font-menu-off"
+                    
+                    /*
+                    style={{
+                      backgroundColor: selectedCategory === "all" ? "#f1f1f1" : "#fff",
+                      color: selectedCategory === "all" ? "#212121" : "#999",
+                    }}
+                    */
+                  /* when selected bg is dark, text is light */
+                  
+                    style={{
+                      backgroundColor: isTop === "Y" ? "#000" : "#f1f1f1",
+                      color: isTop === "Y" ? "#fff" : "#999",
+                    }}
+                    
+
+                  >
+                    자주하는 질문
+                  </div>
+
+
+                </button>
+
+                {
+                  categoryData.map((item: any, index: number) => (
+                    <button
+                      key = {index}
+                      onClick={() => {
+                        setIsTop('N');
+                        setSelectedCategory(item?.name);
+                      }}
+                      //className="rounded-81xl bg-grey-f1 flex flex-row items-center justify-center py-3 px-8 text-left text-sm text-grey-9 font-menu-off"
+                    >
+                    <div className="rounded-81xl bg-grey-f1 flex flex-row items-center justify-center py-3 px-5 text-left text-sm text-grey-9 font-menu-off"
+                    style={{
+                      backgroundColor: selectedCategory === item?.name ? "#000" : "#f1f1f1",
+                      color: selectedCategory === item?.name ? "#fff" : "#999",
+                    }}
+                    >
+                      {item?.name}
+                    </div>
+                    </button>
+                  ))
+                }
+
+
+              </div>
+
+            </div>
+
+
+
+            { data?.length > 0 && data?.map((item: any, index: number) => (
+
+
+              
+              <div key={index} className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
+                
+                <div className="self-stretch flex flex-row items-center justify-between gap-2">
+
+                  <div className="relative font-extrabold  text-sm xl:text-lg  ">
+
+                    {
+                      isTop === 'Y' && ('['+item?.category+'] ')
+                    }
+                        
+                    {item?.title}
+                  </div>
+
+                  {isOpenAarray[index] ? (
+                    <img
+                      className="relative w-5 h-5 overflow-hidden shrink-0"
+                      alt=""
+                      src="/usermain/images/chevronup.svg"
+                      onClick={() => {
+                        const temp = [...isOpenAarray];
+                        temp[index] = false;
+                        setIsOpenArray(temp);
+                      }}
+                    />
+                  ) : (
+                    <img
+                      className="relative w-5 h-5 overflow-hidden shrink-0"
+                      alt=""
+                      src="/usermain/images/chevrondown.svg"
+                      onClick={() => {
+                        const temp = [...isOpenAarray];
+                        temp[index] = true;
+                        setIsOpenArray(temp);
+                      }}
+                    />
+                  )}
+
+                  {/*
                   <img
                     className="relative w-5 h-5 overflow-hidden shrink-0"
                     alt=""
                     src="/usermain/images/chevronup.svg"
-                    onClick={() => {
-                      const temp = [...isOpenAarray];
-                      temp[index] = false;
-                      setIsOpenArray(temp);
-                    }}
                   />
-                ) : (
-                  <img
-                    className="relative w-5 h-5 overflow-hidden shrink-0"
-                    alt=""
-                    src="/usermain/images/chevrondown.svg"
-                    onClick={() => {
-                      const temp = [...isOpenAarray];
-                      temp[index] = true;
-                      setIsOpenArray(temp);
-                    }}
-                  />
-                )}
+                  */}
 
-                {/*
+                </div>
+
+
+                { isOpenAarray[index] && (
+                  <div className="self-stretch relative text-sm leading-[24px]">
+                    <p className="m-0">
+                      {
+                        
+
+
+                        item?.content && <div dangerouslySetInnerHTML={{ __html: 
+                        
+
+                          item?.content
+                          
+                        }} />
+                      }
+                    </p>
+                  </div>
+                )}
+            
+
+              </div>
+      
+                
+
+
+            ))}
+
+
+            
+
+
+            {/*
+            <div className="self-stretch flex flex-row items-center justify-between p-8 border-b-[1px] border-solid border-grey-e">
+              <div className="relative font-extrabold">[회원] 질문입니다.1</div>
+              <img
+                className="relative w-5 h-5 overflow-hidden shrink-0"
+                alt=""
+                src="/usermain/images/chevrondown.svg"
+              />
+            </div>
+
+            <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
+              <div className="self-stretch flex flex-row items-center justify-between">
+                <div className="relative font-extrabold">[회원] 질문입니다.1</div>
                 <img
                   className="relative w-5 h-5 overflow-hidden shrink-0"
                   alt=""
                   src="/usermain/images/chevronup.svg"
                 />
-                */}
-
               </div>
-
-
-              { isOpenAarray[index] && (
-                <div className="self-stretch relative text-sm leading-[24px]">
-                  <p className="m-0">
-                    {
-                      
-
-
-                      item?.content && <div dangerouslySetInnerHTML={{ __html: 
-                      
-
-                        item?.content
-                        
-                      }} />
-                    }
-                  </p>
-                </div>
-              )}
-          
-
+              <div className="self-stretch relative text-sm leading-[24px]">
+                <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+              </div>
             </div>
-    
-              
+
+            <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
+              <div className="self-stretch flex flex-row items-center justify-between">
+                <div className="relative font-extrabold">[회원] 질문입니다.1</div>
+                <img
+                  className="relative w-5 h-5 overflow-hidden shrink-0"
+                  alt=""
+                  src="/usermain/images/chevronup.svg"
+                />
+              </div>
+              <div className="self-stretch relative text-sm leading-[24px]">
+                <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+              </div>
+            </div>
+
+            <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
+              <div className="self-stretch flex flex-row items-center justify-between">
+                <div className="relative font-extrabold">[회원] 질문입니다.1</div>
+                <img
+                  className="relative w-5 h-5 overflow-hidden shrink-0"
+                  alt=""
+                  src="/usermain/images/chevronup.svg"
+                />
+              </div>
+              <div className="self-stretch relative text-sm leading-[24px]">
+                <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+              </div>
+            </div>
+
+            <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
+              <div className="self-stretch flex flex-row items-center justify-between">
+                <div className="relative font-extrabold">[회원] 질문입니다.1</div>
+                <img
+                  className="relative w-5 h-5 overflow-hidden shrink-0"
+                  alt=""
+                  src="/usermain/images/chevronup.svg"
+                />
+              </div>
+              <div className="self-stretch relative text-sm leading-[24px]">
+                <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+              </div>
+            </div>
 
 
-          ))}
+            <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
+              <div className="self-stretch flex flex-row items-center justify-between">
+                <div className="relative font-extrabold">[회원] 질문입니다.1</div>
+                <img
+                  className="relative w-5 h-5 overflow-hidden shrink-0"
+                  alt=""
+                  src="/usermain/images/chevronup.svg"
+                />
+              </div>
+              <div className="self-stretch relative text-sm leading-[24px]">
+                <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+              </div>
+            </div>
 
 
-          
+            <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
+              <div className="self-stretch flex flex-row items-center justify-between">
+                <div className="relative font-extrabold">[회원] 질문입니다.1</div>
+                <img
+                  className="relative w-5 h-5 overflow-hidden shrink-0"
+                  alt=""
+                  src="/usermain/images/chevronup.svg"
+                />
+              </div>
+              <div className="self-stretch relative text-sm leading-[24px]">
+                <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+              </div>
+            </div>
 
 
-          {/*
-          <div className="self-stretch flex flex-row items-center justify-between p-8 border-b-[1px] border-solid border-grey-e">
-            <div className="relative font-extrabold">[회원] 질문입니다.1</div>
-            <img
-              className="relative w-5 h-5 overflow-hidden shrink-0"
-              alt=""
-              src="/usermain/images/chevrondown.svg"
-            />
+            <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
+              <div className="self-stretch flex flex-row items-center justify-between">
+                <div className="relative font-extrabold">[회원] 질문입니다.1</div>
+                <img
+                  className="relative w-5 h-5 overflow-hidden shrink-0"
+                  alt=""
+                  src="/usermain/images/chevronup.svg"
+                />
+              </div>
+              <div className="self-stretch relative text-sm leading-[24px]">
+                <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+                <p className="m-0">내용입니다.</p>
+              </div>
+            </div>
+            */}
+
+
+
           </div>
-
-          <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
-            <div className="self-stretch flex flex-row items-center justify-between">
-              <div className="relative font-extrabold">[회원] 질문입니다.1</div>
-              <img
-                className="relative w-5 h-5 overflow-hidden shrink-0"
-                alt=""
-                src="/usermain/images/chevronup.svg"
-              />
-            </div>
-            <div className="self-stretch relative text-sm leading-[24px]">
-              <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-            </div>
-          </div>
-
-          <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
-            <div className="self-stretch flex flex-row items-center justify-between">
-              <div className="relative font-extrabold">[회원] 질문입니다.1</div>
-              <img
-                className="relative w-5 h-5 overflow-hidden shrink-0"
-                alt=""
-                src="/usermain/images/chevronup.svg"
-              />
-            </div>
-            <div className="self-stretch relative text-sm leading-[24px]">
-              <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-            </div>
-          </div>
-
-          <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
-            <div className="self-stretch flex flex-row items-center justify-between">
-              <div className="relative font-extrabold">[회원] 질문입니다.1</div>
-              <img
-                className="relative w-5 h-5 overflow-hidden shrink-0"
-                alt=""
-                src="/usermain/images/chevronup.svg"
-              />
-            </div>
-            <div className="self-stretch relative text-sm leading-[24px]">
-              <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-            </div>
-          </div>
-
-          <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
-            <div className="self-stretch flex flex-row items-center justify-between">
-              <div className="relative font-extrabold">[회원] 질문입니다.1</div>
-              <img
-                className="relative w-5 h-5 overflow-hidden shrink-0"
-                alt=""
-                src="/usermain/images/chevronup.svg"
-              />
-            </div>
-            <div className="self-stretch relative text-sm leading-[24px]">
-              <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-            </div>
-          </div>
-
-
-          <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
-            <div className="self-stretch flex flex-row items-center justify-between">
-              <div className="relative font-extrabold">[회원] 질문입니다.1</div>
-              <img
-                className="relative w-5 h-5 overflow-hidden shrink-0"
-                alt=""
-                src="/usermain/images/chevronup.svg"
-              />
-            </div>
-            <div className="self-stretch relative text-sm leading-[24px]">
-              <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-            </div>
-          </div>
-
-
-          <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
-            <div className="self-stretch flex flex-row items-center justify-between">
-              <div className="relative font-extrabold">[회원] 질문입니다.1</div>
-              <img
-                className="relative w-5 h-5 overflow-hidden shrink-0"
-                alt=""
-                src="/usermain/images/chevronup.svg"
-              />
-            </div>
-            <div className="self-stretch relative text-sm leading-[24px]">
-              <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-            </div>
-          </div>
-
-
-          <div className="self-stretch flex flex-col items-start justify-start p-8 gap-[20px] border-b-[1px] border-solid border-grey-d">
-            <div className="self-stretch flex flex-row items-center justify-between">
-              <div className="relative font-extrabold">[회원] 질문입니다.1</div>
-              <img
-                className="relative w-5 h-5 overflow-hidden shrink-0"
-                alt=""
-                src="/usermain/images/chevronup.svg"
-              />
-            </div>
-            <div className="self-stretch relative text-sm leading-[24px]">
-              <p className="m-0">내용입니다. 내용입니다. 내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-              <p className="m-0">내용입니다.</p>
-            </div>
-          </div>
-          */}
-
-
-
         </div>
-      </div>
-    </div>
+        </div>
 
       </div>
       <Footer

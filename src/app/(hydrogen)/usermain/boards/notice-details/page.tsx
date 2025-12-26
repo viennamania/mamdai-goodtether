@@ -15,7 +15,7 @@ const Frame1: NextPage = () => {
 
     <>
 
-    <div className="w-full flex flex-col items-center justify-center bg-gray-50 sticky top-0 z-50 ">
+    <div className="w-full flex flex-col items-center justify-center bg-white sticky top-0 z-50 ">
                   <Top1
                     logo="/usermain/images/logo-orangex.png"
                     topBackgroundColor="#fff"

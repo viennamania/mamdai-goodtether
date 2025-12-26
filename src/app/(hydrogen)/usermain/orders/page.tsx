@@ -276,7 +276,7 @@ export default function OrdersPage() {
 
     <>
 
-      <div className="w-full flex flex-col items-center justify-center bg-gray-50 sticky top-0 z-50 ">
+      <div className="w-full flex flex-col items-center justify-center bg-white sticky top-0 z-50 ">
           <Top1
             logo="/usermain/images/logo-orangex.png"
             topBackgroundColor="#fff"
@@ -311,7 +311,7 @@ export default function OrdersPage() {
         {/* ad banner space */}
         {/* image is /usermain/images/ad-banner.gif, ad-banner2.gif, ad-banner3.gif */}
         {/* each image has out link url */}
-        <div className="hidden xl:flex  fixed left-0 top-20 bottom-0 w-52 flex-col items-center justify-start gap-5 pt-5 pb-5 z-40 ">
+        <div className="hidden xl:flex  fixed left-0 top-20 bottom-0 flex-col items-center justify-start gap-5 pt-5 pb-5 pl-5 z-40 ">
 
           <a
             href="https://www.orangex.center"
@@ -319,7 +319,7 @@ export default function OrdersPage() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-32 h-auto relative overflow-hidden shrink-0"
+              className="w-52 h-auto relative overflow-hidden shrink-0"
               alt=""
               src="/usermain/images/ad-banner.gif"
             />
@@ -331,7 +331,7 @@ export default function OrdersPage() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-32 h-auto relative overflow-hidden shrink-0"
+              className="w-52 h-auto relative overflow-hidden shrink-0"
               alt=""
               src="/usermain/images/ad-banner2.gif"
             />
@@ -343,15 +343,13 @@ export default function OrdersPage() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-32 h-auto relative overflow-hidden shrink-0"
+              className="w-52 h-auto relative overflow-hidden shrink-0"
               alt=""
               src="/usermain/images/ad-banner3.gif"
             />
           </a>
 
         </div>
-
-
 
 
         <div className="self-stretch flex flex-col items-center justify-start">

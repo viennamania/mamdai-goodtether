@@ -172,6 +172,53 @@ export default function DietPage() {
    
         <div className="self-stretch xl:bg-gray-50 flex flex-col items-center justify-start py-5 xl:py-10 px-0">
 
+          {/* left from top to bottom */}
+          {/* fixed left top to bottom */}
+          {/* ad banner space */}
+          {/* image is /usermain/images/ad-banner.gif, ad-banner2.gif, ad-banner3.gif */}
+          {/* each image has out link url */}
+          <div className="hidden xl:flex  fixed left-0 top-20 bottom-0 flex-col items-center justify-start gap-5 pt-5 pb-5 pl-5 z-40 ">
+
+            <a
+              href="https://www.orangex.center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-52 h-auto relative overflow-hidden shrink-0"
+                alt=""
+                src="/usermain/images/ad-banner.gif"
+              />
+            </a>
+
+            <a
+              href="https://www.orangex.center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-52 h-auto relative overflow-hidden shrink-0"
+                alt=""
+                src="/usermain/images/ad-banner2.gif"
+              />
+            </a>
+
+            <a
+              href="https://www.orangex.center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="w-52 h-auto relative overflow-hidden shrink-0"
+                alt=""
+                src="/usermain/images/ad-banner3.gif"
+              />
+            </a>
+
+          </div>
+
+
+
 
           <div className=" w-96  xl:w-[1000px] flex flex-col items-center justify-start">
 
@@ -220,12 +267,14 @@ export default function DietPage() {
                   </div>
                 </Link>
 
+                {/*
                 <Link
                   href="/usermain/diet/my"
                   className=" no-underline flex-1 box-border h-14 flex flex-row items-center justify-start text-grey-9 border-b-[2px] border-solid border-grey-d"
                 >
                   <div className="flex-1 relative font-extrabold">My 코인</div>
                 </Link>
+                */}
 
               </div>
 
