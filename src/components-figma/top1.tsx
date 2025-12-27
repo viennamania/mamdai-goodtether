@@ -333,7 +333,7 @@ const Top1: NextPage<Top1Type> = ({
       >
 
 
-        <div className=" flex flex-row items-center justify-center gap-[20px] text-7xs text-white  ">
+        <div className="w-56 flex flex-row items-center justify-center gap-[20px] text-7xs text-white  ">
           <motion.div
             className="box"
             whileHover={{ scale: 1.2 }}
@@ -346,31 +346,28 @@ const Top1: NextPage<Top1Type> = ({
           </motion.div>
         </div>
 
+        <div className="ml-16 flex flex-row items-center justify-center">
 
-
-        <div className=" flex    flex-row items-center justify-center">
-
-
-        <motion.div
-          className="box"
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <Link
-            href="/usermain/feeds"
-            ///style={{ textDecoration: 'none' }}
-        
-            className=" w-[70px] xl:w-[100px] h-14 flex flex-row items-center justify-start"
-            style={frameDivStyle  }
+          <motion.div
+            className="box"
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
+            <Link
+              href="/usermain/feeds"
+              ///style={{ textDecoration: 'none' }}
+          
+              className=" w-[70px] xl:w-[100px] h-14 flex flex-row items-center justify-start"
+              style={frameDivStyle  }
+            >
 
-            <div className="flex-1 relative font-extrabold" style={div1Style}>
-                구매주문            
-            </div>
+              <div className="flex-1 relative font-extrabold" style={div1Style}>
+                  구매주문            
+              </div>
 
-          </Link>
+            </Link>
           </motion.div>
 
           {/*
@@ -501,7 +498,7 @@ const Top1: NextPage<Top1Type> = ({
     
           ) : (
 
-          <div className="flex">
+          <div className="flex w-full flex-row items-center justify-end">
 
 
             {session?.user && userId ? (
