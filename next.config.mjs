@@ -107,14 +107,17 @@ const nextConfig = {
       });
     }
     
-    // Define global variables to prevent "self is not defined" errors
+    // Define global variables to prevent "self is not defined" and "global is not defined" errors
     config.plugins = config.plugins || [];
     config.plugins.push(
+      new webpack.ProvidePlugin({
+        global: 'globalThis',
+      }),
       new webpack.DefinePlugin({
         'typeof window': JSON.stringify(isServer ? 'undefined' : 'object'),
         'typeof self': JSON.stringify(isServer ? 'undefined' : 'object'),
         'typeof global': JSON.stringify('object'),
-        global: isServer ? 'global' : 'globalThis',
+        'typeof exports': JSON.stringify(isServer ? 'object' : 'undefined'),
       })
     );
     
