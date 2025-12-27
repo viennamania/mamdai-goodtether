@@ -352,7 +352,6 @@ const Top1: NextPage<Top1Type> = ({
         //className="w-full flex flex-row items-center justify-between"
       >
 
-
         <div className=" flex flex-row items-center justify-center gap-[20px] text-7xs text-white  ">
           <motion.div
             className="box"
@@ -369,7 +368,7 @@ const Top1: NextPage<Top1Type> = ({
               <img
                 //className="relative w-[199.5px] h-[35.3px]"
                 //className="relative w-[150px]"
-                className="relative w-20"
+                className="relative w-56 h-auto overflow-hidden shrink-0"
                 alt=""
                 src={logo}
               />
@@ -378,10 +377,7 @@ const Top1: NextPage<Top1Type> = ({
           </motion.div>
         </div>
 
-
-
-        <div className=" hidden xl:flex flex-row items-center justify-center">
-
+        <div className=" hidden xl:flex xl:ml-16 flex-row items-center justify-center">
           
           <motion.div
             className="box"
@@ -519,180 +515,159 @@ const Top1: NextPage<Top1Type> = ({
     
           ) : (
             <>
-
-
-
-
-        {session && loading ? (
-            
-            <div className="flex flex-row items-center justify-center gap-[20px] text-7xs text-white">
-              
-              
-              <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white " />
-              
-
-
-            </div>
-  
-        ) : (
  
+              <div className="flex w-full flex-row items-center justify-end">
 
 
-        <div className="flex">
+                {session?.user && userId && !session?.user?.email?.includes('@orangex.center')
+                ? (
+
+                  <div className="flex flex-row items-center justify-center gap-[5px]  xl:gap-[20px] text-7xs text-white">
+
+                    <Link
+                      href={`/usermain/notification`}
+                      className="relative w-6 h-6 ">
+                      <Image
+                        width="24"
+                        height="24"
+                        className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
+                        alt=""
+                        src="/usermain/images/frame.svg"
+                      />
+                      
+                      {notificationCount > 0 && (
+                        <>
+                          <div className="absolute top-[0px] right-[0px] rounded-[50%] bg-red box-border w-[13px] h-[13px] border-[1px] border-solid border-white" />
+
+                          <div className="absolute top-[-15%] left-[66%] font-extrabold">
+                            {notificationCount}
+                          </div>
+                        </>
+                      )}
+
+                      
+                    </Link>
+                    
 
 
-          {session?.user && userId && !session?.user?.email?.includes('@orangex.center')
-          ? (
+                    <motion.div
+                      className="box"
+                      animate={{ scale: 1 }}
+                      transition={{ duration: 0.5 }}
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <button
+                        className="hidden  xl:flex  rounded-81xl  flex-row items-center justify-start py-3 px-6 text-sm text-dark border-[1px] border-solid border-grey-6"
+                        style={frameDiv3Style}
+                        
+                        onClick={() =>
 
-            <div className="flex flex-row items-center justify-center gap-[5px]  xl:gap-[20px] text-7xs text-white">
+                          //usermain/user/profile-edit/53897
+                          //alert (userId)
+                          ///window.location.href = `/usermain/user/profile-edit/${userId}`
 
-              <Link
-                href={`/usermain/notification`}
-                className="relative w-6 h-6 ">
-                <Image
-                  width="24"
-                  height="24"
-                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
-                  alt=""
-                  src="/usermain/images/frame.svg"
-                />
+                          ///window.location.href = `/usermain/user/mypage`
+
+                          router.push(routes.usermain.myPage)
+                          
+                        
+                        }
+                        
+
+                      >
+                        <div className="relative font-extrabold" style={div5Style}>
+                          마이페이지
+                        </div>
+                      </button>
+
+                    </motion.div>
+
                 
-                {notificationCount > 0 && (
-                  <>
-                    <div className="absolute top-[0px] right-[0px] rounded-[50%] bg-red box-border w-[13px] h-[13px] border-[1px] border-solid border-white" />
 
-                    <div className="absolute top-[-15%] left-[66%] font-extrabold">
-                      {notificationCount}
-                    </div>
+
+                    {/* 로그아웃 */}
+                    <motion.div
+                      className="box"
+                      animate={{ scale: 1 }}
+                      transition={{ duration: 0.5 }}
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+
+                        {
+
+                          (session?.user?.email?.includes('@orangex.center') === true) ? (
+                            <button
+                              onClick={() => signOut({
+                                callbackUrl: '/signin'
+                              })}
+                              className="flex  rounded-81xl  flex-row items-center justify-start py-3 px-6 text-sm text-dark border-[1px] border-solid border-grey-6"
+                              style={frameDiv3Style}
+                            >
+                              <div className="relative font-extrabold text-xs xl:text-sm " style={div6Style}>
+                                로그아웃
+                              </div>
+                            </button>
+                          ) : (
+                            <button
+                              onClick={() => signOut({
+                                callbackUrl: '/usermain/user/login'
+                              })}
+                              className="flex  rounded-81xl  flex-row items-center justify-start py-3 px-6 text-sm text-dark border-[1px] border-solid border-grey-6"
+                              style={frameDiv3Style}
+                            >
+                              <div className="relative font-extrabold text-xs xl:text-sm " style={div6Style}>
+                                로그아웃
+                              </div>
+                            </button>
+                          )
+
+                        }
+
+
+
+                    </motion.div>
+
+                  </div>
+
+
+                ) : (
+
+                  <>
+
+                
+
+                  <motion.div
+                    className="box"
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <Link
+                      href="/usermain/user/login"
+                      className=" no-underline rounded-81xl flex flex-row items-center justify-start py-3 px-6 text-sm border-[1px] border-solid border-grey-6"
+                      style={frameDiv4Style}
+                    >
+                      <div className="relative font-extrabold" style={div6Style}>
+                        로그인
+                      </div>
+                    </Link>
+                  </motion.div>
+
+                  
+
+
                   </>
+
                 )}
 
-                
-              </Link>
-              
-
-
-              <motion.div
-                className="box"
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <button
-                  className="hidden  xl:flex  rounded-81xl  flex-row items-center justify-start py-3 px-6 text-sm text-dark border-[1px] border-solid border-grey-6"
-                  style={frameDiv3Style}
-                  
-                  onClick={() =>
-
-                    //usermain/user/profile-edit/53897
-                    //alert (userId)
-                    ///window.location.href = `/usermain/user/profile-edit/${userId}`
-
-                    ///window.location.href = `/usermain/user/mypage`
-
-                    router.push(routes.usermain.myPage)
-                    
-                  
-                  }
-                  
-
-                >
-                  <div className="relative font-extrabold" style={div5Style}>
-                    마이페이지
-                  </div>
-                </button>
-
-              </motion.div>
-
-          
-
-
-              {/* 로그아웃 */}
-              <motion.div
-                className="box"
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-
-                  {
-
-                    (session?.user?.email?.includes('@orangex.center') === true) ? (
-                      <button
-                        onClick={() => signOut({
-                          callbackUrl: '/signin'
-                        })}
-                        className="flex  rounded-81xl  flex-row items-center justify-start py-3 px-6 text-sm text-dark border-[1px] border-solid border-grey-6"
-                        style={frameDiv3Style}
-                      >
-                        <div className="relative font-extrabold text-xs xl:text-sm " style={div6Style}>
-                          로그아웃
-                        </div>
-                      </button>
-                    ) : (
-                      <button
-                        onClick={() => signOut({
-                          callbackUrl: '/usermain/user/login'
-                        })}
-                        className="flex  rounded-81xl  flex-row items-center justify-start py-3 px-6 text-sm text-dark border-[1px] border-solid border-grey-6"
-                        style={frameDiv3Style}
-                      >
-                        <div className="relative font-extrabold text-xs xl:text-sm " style={div6Style}>
-                          로그아웃
-                        </div>
-                      </button>
-                    )
-
-                  }
-
-
-
-              </motion.div>
-
-            </div>
-
-
-          ) : (
-
-            <>
-
-           
-
-            <motion.div
-              className="box"
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Link
-                href="/usermain/user/login"
-                className=" no-underline rounded-81xl flex flex-row items-center justify-start py-3 px-6 text-sm border-[1px] border-solid border-grey-6"
-                style={frameDiv4Style}
-              >
-                <div className="relative font-extrabold" style={div6Style}>
-                  로그인
-                </div>
-              </Link>
-            </motion.div>
-
-            
-
+              </div>
 
             </>
 
           )}
-
-        </div>
-
-        )}
-
-
-        </>
-
-        )}
 
 
       </div>
