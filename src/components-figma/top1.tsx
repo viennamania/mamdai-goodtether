@@ -501,160 +501,135 @@ const Top1: NextPage<Top1Type> = ({
     
           ) : (
 
-            <>
+          <div className="flex">
 
 
+            {session?.user && userId ? (
 
-
-        {session && loading ? (
-            
-            <div className="flex flex-row items-center justify-center gap-[20px] text-7xs text-white">
-              
-              
-              <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white " />
-              
-
-
-            </div>
-  
-        ) : (
- 
-
-
-        <div className="flex">
-
-
-          {session?.user && userId ? (
-
-            <div className="flex flex-row items-center justify-center gap-[20px] text-7xs text-white">
-
-              
-              
-              <Link
-                href={`/usermain/notification`}
-                className="relative w-6 h-6 ">
-                <Image
-                  width="24"
-                  height="24"
-                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
-                  alt=""
-                  src="/usermain/images/frame.svg"
-                />
-                
-                {notificationCount > 0 && (
-                  <>
-                    <div className="absolute top-[0px] right-[0px] rounded-[50%] bg-red box-border w-[13px] h-[13px] border-[1px] border-solid border-white" />
-
-                    <div className="absolute top-[-15%] left-[66%] font-extrabold">
-                      {notificationCount}
-                    </div>
-                  </>
-                )}
+              <div className="flex flex-row items-center justify-center gap-[20px] text-7xs text-white">
 
                 
-              </Link>
-              
-
-
-              <motion.div
-                className="box"
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <button
-                  className="hidden  xl:flex  rounded-81xl  flex-row items-center justify-start py-3 px-6 text-sm text-dark border-[1px] border-solid border-grey-6"
-                  style={frameDiv3Style}
+                
+                <Link
+                  href={`/usermain/notification`}
+                  className="relative w-6 h-6 ">
+                  <Image
+                    width="24"
+                    height="24"
+                    className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
+                    alt=""
+                    src="/usermain/images/frame.svg"
+                  />
                   
-                  onClick={() =>
+                  {notificationCount > 0 && (
+                    <>
+                      <div className="absolute top-[0px] right-[0px] rounded-[50%] bg-red box-border w-[13px] h-[13px] border-[1px] border-solid border-white" />
 
-                    //usermain/user/profile-edit/53897
-                    //alert (userId)
-                    ///window.location.href = `/usermain/user/profile-edit/${userId}`
-
-                    ///window.location.href = `/usermain/user/mypage`
-
-                    router.push(routes.usermain.myPage)
-                    
-                  
-                  }
-                  
-
-                >
-                  <div className="relative font-extrabold" style={div5Style}>
-                    마이페이지
-                  </div>
-                </button>
-
-              </motion.div>
-
-          
-
-
-              {/* 로그아웃 */}
-              <motion.div
-                className="box"
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <button
-                  onClick={() => signOut(
-                    { callbackUrl: '/usermain/user/login' }
+                      <div className="absolute top-[-15%] left-[66%] font-extrabold">
+                        {notificationCount}
+                      </div>
+                    </>
                   )}
 
-                  className="flex  rounded-81xl  flex-row items-center justify-start py-3 px-6 text-sm text-dark border-[1px] border-solid border-grey-6"
-                  style={frameDiv3Style}
-                 
+                  
+                </Link>
+                
+
+
+                <motion.div
+                  className="box"
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 >
-                  <div className="relative font-extrabold" style={div6Style}>
-                    로그아웃
-                  </div>
-                </button>
-              </motion.div>
+                  <button
+                    className="hidden  xl:flex  rounded-81xl  flex-row items-center justify-start py-3 px-6 text-sm text-dark border-[1px] border-solid border-grey-6"
+                    style={frameDiv3Style}
+                    
+                    onClick={() =>
 
-            </div>
+                      //usermain/user/profile-edit/53897
+                      //alert (userId)
+                      ///window.location.href = `/usermain/user/profile-edit/${userId}`
 
+                      ///window.location.href = `/usermain/user/mypage`
 
-          ) : (
+                      router.push(routes.usermain.myPage)
+                      
+                    
+                    }
+                    
 
-            <>
+                  >
+                    <div className="relative font-extrabold" style={div5Style}>
+                      마이페이지
+                    </div>
+                  </button>
 
-           
-
-            <motion.div
-              className="box"
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Link
-                href="/usermain/user/login"
-                className=" no-underline rounded-81xl flex flex-row items-center justify-start py-3 px-6 text-sm border-[1px] border-solid border-grey-6"
-                style={frameDiv4Style}
-              >
-                <div className="relative font-extrabold" style={div6Style}>
-                  로그인
-                </div>
-              </Link>
-            </motion.div>
+                </motion.div>
 
             
 
 
-            </>
+                {/* 로그아웃 */}
+                <motion.div
+                  className="box"
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <button
+                    onClick={() => signOut(
+                      { callbackUrl: '/usermain/user/login' }
+                    )}
 
-          )}
+                    className="flex  rounded-81xl  flex-row items-center justify-start py-3 px-6 text-sm text-dark border-[1px] border-solid border-grey-6"
+                    style={frameDiv3Style}
+                  
+                  >
+                    <div className="relative font-extrabold" style={div6Style}>
+                      로그아웃
+                    </div>
+                  </button>
+                </motion.div>
 
-        </div>
-
-        )}
+              </div>
 
 
-        </>
+            ) : (
+
+              <>
+
+            
+
+              <motion.div
+                className="box"
+                animate={{ scale: 1 }}
+                transition={{ duration: 0.5 }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Link
+                  href="/usermain/user/login"
+                  className=" no-underline rounded-81xl flex flex-row items-center justify-start py-3 px-6 text-sm border-[1px] border-solid border-grey-6"
+                  style={frameDiv4Style}
+                >
+                  <div className="relative font-extrabold" style={div6Style}>
+                    로그인
+                  </div>
+                </Link>
+              </motion.div>
+
+              
+
+
+              </>
+
+            )}
+
+          </div>
 
         )}
 
