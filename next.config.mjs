@@ -91,7 +91,7 @@ const nextConfig = {
   output: 'standalone',
 
   // Suppress Webpack deprecation warnings
-  webpack: (config, { dev, isServer, webpack }) => {
+  webpack: (config, { dev, isServer, webpack, nextRuntime }) => {
     // Suppress Module.updateHash deprecation warnings
     config.infrastructureLogging = {
       level: 'error',
@@ -107,19 +107,20 @@ const nextConfig = {
       });
     }
     
-    // Define global variables to prevent "self is not defined" and "global is not defined" errors
-    config.plugins = config.plugins || [];
-    config.plugins.push(
-      new webpack.ProvidePlugin({
-        global: 'globalThis',
-      }),
-      new webpack.DefinePlugin({
-        'typeof window': JSON.stringify(isServer ? 'undefined' : 'object'),
-        'typeof self': JSON.stringify(isServer ? 'undefined' : 'object'),
-        'typeof global': JSON.stringify('object'),
-        'typeof exports': JSON.stringify(isServer ? 'object' : 'undefined'),
-      })
-    );
+    // Only add these plugins for non-edge runtime (skip middleware)
+    if (nextRuntime !== 'edge') {
+      // Define global variables to prevent "self is not defined" and "global is not defined" errors
+      config.plugins = config.plugins || [];
+      
+      // Only apply ProvidePlugin for client-side
+      if (!isServer) {
+        config.plugins.push(
+          new webpack.ProvidePlugin({
+            global: 'globalThis',
+          })
+        );
+      }
+    }
     
     // Add fallbacks for Node.js modules in browser environment
     config.resolve.fallback = {
